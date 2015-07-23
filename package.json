@@ -1,0 +1,31 @@
+{
+  "name": "anemone-wars",
+  "version": "1.0.0",
+  "description": "Engage in all out tentacle warfare against your fellow Actiniaria. Make your anemone the smartest and most adaptive species around to dominate the seas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clark-pan/anemone-wars.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clark-pan/anemone-wars/issues"
+  },
+  "homepage": "https://github.com/clark-pan/anemone-wars",
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "jquery": "github:components/jquery@^2.1.4",
+      "lodash": "npm:lodash@^3.10.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}
