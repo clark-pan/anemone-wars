@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const MAX_HEALTH = 10,
+export const MAX_HEALTH = 12,
 	HEALTH_REGEN = 5,
 	ATTACK_COST = -2,
 	DEFENSE_COST = -1,
@@ -17,6 +17,8 @@ export const ANEMONE_STATES = {
 	ATTACK : Symbol('ATTACK')
 }
 
+const validStates = new Set(_.values(ANEMONE_STATES));
+
 export default class Anemone {
 	constructor({ health = MAX_HEALTH } = {}){
 		this[_health] = health;
@@ -28,6 +30,7 @@ export default class Anemone {
 	}
 
 	regenerate(){
+		if(this.state !== ANEMONE_STATES.REGEN) return;
 		this[_health] = Math.min(MAX_HEALTH, this[_health] + HEALTH_REGEN);
 	}
 
@@ -66,6 +69,14 @@ export default class Anemone {
 
 	get health(){
 		return this[_health];
+	}
+
+	set health(value){
+		if(value >= MAX_HEALTH){
+			this[_health] = MAX_HEALTH;
+		} else {
+			this[_health] = value;
+		}
 	}
 
 	get state(){

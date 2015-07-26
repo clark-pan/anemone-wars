@@ -4,24 +4,32 @@ import Tile, { TILE_TYPES } from './tile';
 const _tiles = Symbol('tiles'),
 	_width = Symbol('width'),
 	_height = Symbol('height'),
-	_tilePositions = Symbol('_tilePositions'),
-	_connectTiles = Symbol('connectTiles');
+	_tilePositions = Symbol('_tilePositions');
 
-const SIZE_WIDTH = 25,
-	SIZE_HEIGHT = 10;
+const SIZE_WIDTH = 48,
+	SIZE_HEIGHT = 20;
+
+function positiveMod(x, n){
+	return ((x % n) + n) % n;
+}
 
 /**
  * This is a hexagonal board orientated as such:
  *
  * 0,0       2,0       4,0
- *      1,0       3,0
+ *      1,0       3,0       5,0
  * 0,1       2,1       4,1
- *      1,1       3,1
+ *      1,1       3,1       5,1
  * 0,2       2,2       4,2
- *      1,2       3,2  
+ *      1,2       3,2       5,2
+ *
+ * The edges connect to each other, and thus the width needs to be an even number
  */
 export default class Board {
 	constructor(width = SIZE_WIDTH, height = SIZE_HEIGHT) {
+		if(width % 2){
+			throw new Error('Board width must be even');
+		}
 		this[_width] = width;
 		this[_height] = height;
 
@@ -36,8 +44,6 @@ export default class Board {
 				positionMap.set(tile, [x, y]);
 			}
 		}
-
-		this[_connectTiles]();
 	}
 
 	getSize(){
@@ -54,7 +60,7 @@ export default class Board {
 	}
 
 	getTile(x, y) {
-		if(x >= 0 && x < width && y >= 0 && y < height){
+		if(x >= 0 && x < this[_width] && y >= 0 && y < this[_height]){
 			return this[_tiles][x][y];
 		} else {
 			return null;
@@ -62,57 +68,85 @@ export default class Board {
 	}
 
 	getTilePosition(tile){
-		return this[_tilePositions].get(tile) || [null, null];
+		return this[_tilePositions].get(tile);
 	}
 
-	*tileIterator() {
+	getNeighbours(tile){
+		return _.times(6, (n) => this.getRelativeTile(tile, n));
+	}
+
+	getRelativeTile(tile, direction){
+		let position = this.getTilePosition(tile);
+		if(!position){
+			throw new Error('tile not part of board');
+		}
+		let [x, y] = position,
+			x2, y2;
+		switch(direction){
+			case 0:
+				x2 = x;
+				y2 = y - 1;
+			break;
+			case 1:
+				x2 = x + 1;
+				y2 = y + ((x % 2) ? 0 : -1);
+			break;
+			case 2:
+				x2 = x + 1;
+				y2 = y + ((x % 2) ? 1 : 0);
+			break;
+			case 3:
+				x2 = x;
+				y2 = y + 1;
+			break;
+			case 4:
+				x2 = x - 1;
+				y2 = y + ((x % 2) ? 1 : 0);
+			break;
+			case 5:
+				x2 = x - 1;
+				y2 = y + ((x % 2) ? 0 : -1);
+			break;
+			default:
+				throw new Error('Invalid tile direction');
+		}
+
+		//Make the world loop around on itself
+		x2 = positiveMod(x2, this[_width]);
+		y2 = positiveMod(y2, this[_height]);
+
+		return this.getTile(x2, y2);
+	}
+
+	getTileTop(tile){
+		return this.getRelativeTile(tile, 0);
+	}
+
+	getTileTopRight(tile){
+		return this.getRelativeTile(tile, 1);
+	}
+
+	getTileBottomRight(tile){
+		return this.getRelativeTile(tile, 2);
+	}
+
+	getTileBottom(tile){
+		return this.getRelativeTile(tile, 3);
+	}
+
+	getTileBottomLeft(tile){
+		return this.getRelativeTile(tile, 4);
+	}
+
+	getTileTopLeft(tile){
+		return this.getRelativeTile(tile, 5);
+	}
+
+	*tiles() {
 		for(let column of this[_tiles]){
 			for(let tile of column){
 				yield tile;
 			}
 		}
-	}
-
-	[_connectTiles](){
-		//TODO implement linking of the first and last nodes/column
-		let previousTopLeft = null, previousBottomLeft = null, firstInRow = null;
-		_.each(this[_tiles], function(column, n){
-			let previousInRow = null;
-			if(firstInRow){
-				if(n % 2){
-					previousTopLeft = firstInRow;
-					previousBottomLeft = firstInRow.bottom;
-				} else {
-					previousTopLeft = null;
-					previousBottomLeft = firstInRow;
-				}
-				firstInRow = null;
-			}
-			_.each(column, function(tile){
-				if(!firstInRow) firstInRow = tile;
-				if(previousInRow){
-					tile.top = previousInRow;
-					previousInRow.bottom = tile;
-				}
-
-				if(previousTopLeft){
-					tile.topLeft = previousTopLeft;
-					previousTopLeft.bottomRight = tile;
-				}
-
-				if(previousBottomLeft){
-					tile.bottomLeft = previousBottomLeft;
-					previousBottomLeft.topRight = tile;
-				}
-
-				previousInRow = tile;
-				if(previousBottomLeft){
-					previousTopLeft = previousBottomLeft;
-					if(previousBottomLeft.bottom){
-						previousBottomLeft = previousBottomLeft.bottom;
-					}
-				}
-			});
-		});
 	}
 }
