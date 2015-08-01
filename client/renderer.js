@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import _ from 'lodash';
-import { MAX_HEALTH } from '../shared/anemone';
+import { MAX_HEALTH } from '../shared/game/anemone';
 
 const _drawTile = Symbol('drawTile'),
 	_drawHex = Symbol('drawHex'),

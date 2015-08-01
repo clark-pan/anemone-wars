@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import _ from 'lodash';
 
-import Game from '../shared/game';
-import Board from '../shared/board';
-import Player from '../shared/player';
+import Game from '../shared/game/engine';
+import Board from '../shared/game/board';
+import Player from '../shared/game/player';
 import Renderer from './renderer';
 
 const NUM_PLAYERS = 6;
