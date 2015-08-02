@@ -68,6 +68,68 @@ export default class Game {
 		}
 	}
 
+	//TODO, use a binary format that would be more efficiently transferred into web worker/child process
+	getPlayerState(player){
+		let _this = this;
+		if(!this.players.has(player.id)) return null;
+		let serialized = {
+			turn : this[_turnCounter],
+			players : {},
+			anemones : {},
+			tiles : []
+		};
+
+		for(let player of this.players.values()){
+			serialized.players[player.id] = {
+				id : player.id,
+				name : player.name
+			};
+		}
+
+		for(let anemone of this[_playerAnemones].get(player).values()){
+			let position = this.board.getTilePosition(this[_anemoneLocations].get(anemone)),
+				id = this[_anemoneIds].get(anemone);
+			serialized.anemones[id] = createSerializedAnemone(anemone);
+		}
+
+		let x = 0, y = 0;
+		for(let column of this.board.columns()){
+			let currentColumn = [];
+			y = 0;
+			serialized.tiles.push(currentColumn);
+			for(let tile of column()){
+				let serializedTile = {
+					occupant : null,
+					x : x,
+					y : y
+				};
+				let anemone = this.getTileOccupant(tile);
+				if(anemone){
+					serializedTile.occupant = createSerializedAnemone(anemone);
+				}
+				currentColumn.push(serializedTile);
+				y++;
+			}
+			x++;
+		}
+		return serialized;
+
+		function createSerializedAnemone(anemone){
+			let id = _this.getAnemoneId(anemone);
+			if(serialized.anemones[id]){
+				return serialized.anemones[id];
+			}
+			let position = _this.board.getTilePosition(_this.getAnemoneLocation(anemone)),
+				player = serialized.players[_this.getAnemoneOwner(anemone).id];
+			return {
+				id : id,
+				owner : player,
+				position : position,
+				health : anemone.health
+			};
+		}
+	}
+
 	getAnemone(id){
 		return this[_anemones].get(id);
 	}

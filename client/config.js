@@ -1,5 +1,6 @@
 System.config({
   "baseURL": "/",
+  "defaultJSExtensions": true,
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
@@ -7,9 +8,8 @@ System.config({
     ]
   },
   "paths": {
-    "*": "*.js",
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
   }
 });
 
@@ -17,6 +17,7 @@ System.config({
   "map": {
     "babel": "npm:babel-core@5.7.4",
     "babel-runtime": "npm:babel-runtime@5.7.0",
+    "bluebird": "npm:bluebird@2.9.34",
     "core-js": "npm:core-js@0.9.18",
     "jquery": "github:components/jquery@2.1.4",
     "lodash": "npm:lodash@3.10.0",
@@ -24,6 +25,9 @@ System.config({
       "process": "npm:process@0.10.1"
     },
     "npm:babel-runtime@5.7.0": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:bluebird@2.9.34": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:core-js@0.9.18": {

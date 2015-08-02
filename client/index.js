@@ -1,10 +1,12 @@
 import $ from 'jquery';
 import _ from 'lodash';
+import Promise from 'bluebird';
 
 import Game from '../shared/game/engine';
 import Board from '../shared/game/board';
 import Player from '../shared/game/player';
 import Renderer from './renderer';
+import Bot from './bot/bot.js';
 
 const NUM_PLAYERS = 6;
 
@@ -49,6 +51,14 @@ $(function(){
 	let rAF = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || setTimeout;
 	//rAF = _.partialRight(setTimeout, 100);
 
+	var bots = null;
+	Promise.all(_.map(players, (player) => {
+		return Bot.createBot('/shared/bots/empty.js');
+	})).then(function(results){
+		bots = new Map(_.zip(players, results));
+		test();
+	});
+
 	function draw(){
 		$canvas[0].width = Math.ceil(window.innerWidth);
 		$canvas[0].height = Math.ceil(window.innerHeight);
@@ -57,68 +67,20 @@ $(function(){
 	$(window).on('resize', draw);
 
 	function test(){
-		let moves = [];
-		_.each(players, function(player, i){
-			let anemones = game.getPlayerAnemones(player);
-			for(let anemone of anemones){
-				let neighbours = game.getAnemoneNeighbours(anemone);
-				let enemyNeighbourIndex = _.findIndex(neighbours, (enemy) => enemy && game.getAnemoneOwner(enemy) !== player);
-				if(enemyNeighbourIndex != -1){
-					let matrix = probabilityMatrix[i];
-					let dice = Math.random();
-					let index = _.findIndex(matrix, (n) => n > dice);
-					switch(index){
-						case 0: //Attack
-							moves.push({
-								id : game.getAnemoneId(anemone),
-								action : 'attack',
-								direction : enemyNeighbourIndex
-							});
-						break;
-						case 1: //Defend
-							moves.push({
-								id : game.getAnemoneId(anemone),
-								action : 'defend'
-							});
-						break;
-						case 2: //Split
-							moves.push({
-								id : game.getAnemoneId(anemone),
-								action : 'split',
-								direction : enemyNeighbourIndex
-							});
-						break;
-						case 3: //Regen
-						default:
-							moves.push({
-								id : game.getAnemoneId(anemone),
-								action : 'regenerate'
-							});
-					}
-				} else {
-					let emptyDirection = _.findIndex(neighbours, (potential) => !potential);
-					if(emptyDirection != -1 && anemone.health > 1){
-						moves.push({
-							id : game.getAnemoneId(anemone),
-							action : 'split',
-							direction : emptyDirection
-						});
-					} else {
-						moves.push({
-							id : game.getAnemoneId(anemone),
-							action : 'regenerate'
-						});
-					}
-				}
-			}
+		let inputs = [];
+		for(let [player, bot] of bots.entries()){
+			inputs.push(bot.getMoves(game.getPlayerState(player)));
+		}
+		Promise.settle(inputs).then(function(results){
+			let moves = _.chain(results)
+				.map((x) => x.value())
+				.flatten()
+				.value();
+			game.resolve(moves);
+			renderer.draw();
+			setTimeout(test, 0);
 		});
-
-		game.resolve(moves);
-		renderer.draw();
-		rAF(test);
-	};
-
-	rAF(test);
+	}
 
 	draw();
 });

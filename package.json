@@ -20,6 +20,7 @@
     "directories": {},
     "configFile": "client/config.js",
     "dependencies": {
+      "bluebird": "npm:bluebird@^2.9.34",
       "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.0"
     },
@@ -33,5 +34,8 @@
     "bluebird": "^2.9.34",
     "express": "^4.13.2",
     "lodash": "^3.10.0"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.0-beta.3"
   }
 }

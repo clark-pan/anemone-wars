@@ -149,4 +149,14 @@ export default class Board {
 			}
 		}
 	}
+
+	*columns() {
+		for(let column of this[_tiles]){
+			yield function *(){
+				for(let tile of column){
+					yield tile;
+				}
+			}
+		}
+	}
 }
