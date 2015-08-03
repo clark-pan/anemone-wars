@@ -9,7 +9,7 @@ For now, install NodeJS, then run (in the directory)
 npm install -g jspm http-server
 npm install
 jspm install
-http-server
+node server/index.js
 ```
 
 that should install dependencies and open a webserver on localhost:8080
