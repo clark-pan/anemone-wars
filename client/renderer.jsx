@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import _ from 'lodash';
 import { MAX_HEALTH } from '../shared/game/anemone';
 
@@ -10,7 +9,7 @@ const _drawTile = Symbol('drawTile'),
 
 const
 	//Sizes and dimensions
-	HEX_SIDE_SIZE = 18,
+	HEX_SIDE_SIZE = 20,
 	HEX_WIDTH_RADIUS = HEX_SIDE_SIZE * Math.cos(60*Math.PI/180) + HEX_SIDE_SIZE * 0.5,
 	HEX_HEIGHT_RADIUS = HEX_SIDE_SIZE * Math.sin(60*Math.PI/180),
 	HALF_HEX_SIZE = HEX_SIDE_SIZE * 0.5,
@@ -25,13 +24,16 @@ const
 	];
 
 export default class Renderer {
-	constructor($canvas, game) {
-		this.$canvas = $canvas;
-		this.ctx = $canvas[0].getContext('2d');
+	constructor(drawingContext, game) {
+		this.ctx = drawingContext;
 		this.game = game;
 
 		this[_playerCounter] = 0;
 		this[_playerStyleInfo] = {};
+	}
+
+	setGame(game){
+		this.game = game;
 	}
 
 	draw() {

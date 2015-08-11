@@ -3,7 +3,7 @@ var path = require('path'),
 var app = express();
 
 app.use('/client', express.static(path.join(__dirname, '../client')));
-app.use('/jspm_packages', express.static(path.join(__dirname, '../jspm_packages')));
+app.use('/jspm_packages', express.static(path.join(__dirname, '../jspm_packages'), { 'redirect' : false }));
 app.use('/shared', express.static(path.join(__dirname, '../shared')));
 
 app.get('/', function(req, res){

@@ -2,9 +2,16 @@
 <html>
 	<head>
 		<title>Anemone Wars</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 		<style>
-			#canvas {
-				position:absolute;
+			html, body {
+				padding: 0;
+				margin: 0;
+				min-height: 100%;
+			}
+
+			.board-canvas {
+				position: absolute;
 				left: 0;
 				right: 0;
 				bottom: 0;
@@ -12,19 +19,33 @@
 				display: block;
 			}
 
-			html, body {
-				padding: 0;
-				margin: 0;
-				min-height: 100%;
+			.overlay {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				display: block;
+			}
+
+			.controls {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				width: 500px;
+			}
+
+			.controls-codecontainer {
+				height: 300px;
 			}
 		</style>
 	</head>
 	<body>
-		<canvas id="canvas"></canvas>
+		<div id="app"></div>
 		<script src="/jspm_packages/system.js"></script>
 		<script src="/client/config.js"></script>
 		<script>
-			System.import('client/index');
+			System.import('client');
 		</script>
 	</body>
 </html>

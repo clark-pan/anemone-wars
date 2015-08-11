@@ -396,4 +396,8 @@ export default class Game {
 		}
 		return removed;
 	}
+
+	get turn() {
+		return this[_turnCounter];
+	}
 }
