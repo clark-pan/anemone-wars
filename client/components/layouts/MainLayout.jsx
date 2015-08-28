@@ -2,80 +2,78 @@ import React from 'react';
 import _ from 'lodash';
 import Promise from 'bluebird';
 
-//Views
+// Views
 import BoardComponent from '/client/components/Board';
 import Controls from '/client/components/Controls';
 import mui from 'material-ui';
 
-import Game from '/shared/game/engine.js';
-import Board from '/shared/game/board.js';
-import Player from '/shared/game/player.js';
+import * as Engine from '/shared/game/engine.js';
 import Bot from '/client/bot/bot.js';
 
-let ThemeManager = new mui.Styles.ThemeManager();
+const ThemeManager = new mui.Styles.ThemeManager();
 ThemeManager.setTheme(ThemeManager.types.LIGHT);
 
 export default class MainLayout extends React.Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 
-		//checking if react working
-		let board = new Board();
-		let players = _.times(6, (n) => new Player(n));
-		let game = new Game(board, players);
-		game.setupGame();
+		const players = _.times(6, (n) => {
+			return {
+				id: n.toString()
+			};
+		}),
+			gameState = Engine.getRandomInitialState(48, 20, _.keys(players));
 
 		this.state = {
-			board : board,
-			players : players,
-			game : game
+			gameState: gameState
 		};
 
 		let bots = null;
-		Promise.all(_.map(players, (player) => {
+		Promise.all(_.map(players, () => {
 			return Bot.createBot('/shared/bots/beginner.js');
-		})).then(function(results){
+		})).then((results) => {
 			bots = new Map(_.zip(players, results));
-			//test();
+			test();
 		});
 
 		let test = () => {
 			let inputs = [];
 			for(let [player, bot] of bots.entries()){
-				inputs.push(bot.getMoves(game.getPlayerState(player)));
+				inputs.push(bot.getMoves(this.state.gameState, player));
 			}
 			Promise.settle(inputs).then((results) =>{
 				let moves = _.chain(results)
-					.map((x) => x.value())
-					.flatten()
+					.map(x => x.value())
 					.value();
-				game.resolve(moves);
+
+				moves = _.assign.apply(_, [{}].concat(moves));
 				this.setState({
-					game : game
+					gameState : Engine.resolve(this.state.gameState, moves)
 				});
 				setTimeout(test, 0);
 			});
 		}
 	}
 
-	getChildContext(){
+	getChildContext() {
 		return {
-			muiTheme : ThemeManager.getCurrentTheme()
+			muiTheme: ThemeManager.getCurrentTheme()
 		};
 	}
 
-	render(){
+	render() {
 		return (
 			<div>
-				<BoardComponent game={this.state.game} />
+				<BoardComponent game={this.state.gameState} />
 				<div className="overlay">
-					<Controls />
+					{/*<Controls />*/}
 				</div>
 			</div>
 		);
 	}
 }
 
+MainLayout.displayName = 'MainLayout';
 MainLayout.childContextTypes = {
-	muiTheme : React.PropTypes.object
-}
+	muiTheme: React.PropTypes.object
+};

@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Renderer from '../renderer';
+import Renderer from '/client/components/Renderer';
 
-import Game from '/shared/game/engine';
-
-let _canvas = Symbol('canvas'), _resizeHandler = Symbol('resizeHandler'), _lastRenderedTurn = Symbol('lastRenderedTurn'), _draw = Symbol('draw');
+const _canvas = Symbol('canvas'), _resizeHandler = Symbol('resizeHandler'),
+	_lastRenderedTurn = Symbol('lastRenderedTurn'), _draw = Symbol('draw');
 
 export default class Board extends React.Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 		this[_lastRenderedTurn] = -1;
 	}
 
-	componentDidMount(){
+	componentDidMount() {
 		this[_canvas] = document.createElement('canvas');
 		this[_canvas].classList.add('board-canvas');
 		this.renderer = new Renderer(this[_canvas].getContext('2d'), this.props.game);
@@ -22,43 +21,39 @@ export default class Board extends React.Component {
 		this[_resizeHandler] = () => {
 			this[_canvas].width = window.innerWidth;
 			this[_canvas].height = window.innerHeight;
-			if(this.props.game){
+			if (this.props.game) {
 				this[_draw]();
 			}
-		}
+		};
 
 		window.addEventListener('resize', this[_resizeHandler]);
 		this[_resizeHandler]();
 	}
 
-	shouldComponentUpdate(nextProps, nextState){
+	shouldComponentUpdate(nextProps) {
 		return nextProps.game !== this.props.game || nextProps.game.turn !== this[_lastRenderedTurn];
 	}
 
-	componentWillUpdate(nextProps, nextState){
-		this.renderer.setGame(nextProps.game);
+	componentDidUpdate() {
+		this[_draw](this.props.game);
 	}
 
-	componentDidUpdate(){
-		this[_draw]();
+	[_draw]() {
+		this[_lastRenderedTurn] = this.props.game.turn;
+		this.renderer.draw(this.props.game);
 	}
 
-	render(){
+	render() {
 		return (
 			<div ref="container" styles={Board.styles} />
-		)
-	}
-
-	[_draw](){
-		this[_lastRenderedTurn] = this.props.game.turn;
-		this.renderer.draw();
+		);
 	}
 }
 
+Board.displayName = 'Board';
 Board.propTypes = {
-	game : React.PropTypes.instanceOf(Game).isRequired
-}
-
+	game: React.PropTypes.object.isRequired
+};
 Board.styles = {
 	position: 'absolute',
 	left: 0,
@@ -66,4 +61,4 @@ Board.styles = {
 	bottom: 0,
 	top: 0,
 	display: 'block'
-}
+};

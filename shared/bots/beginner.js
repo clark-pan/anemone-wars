@@ -1,11 +1,11 @@
-var actions = ['attack', 'defend', 'split', 'regenerate'];
+var actions = ['split', 'regenerate'];
 
-function getMoves(state){
-	return Object.keys(state.anemones).map(function(id){
-		return {
-			id : id,
+function getMoves(state, me, myAnemones) {
+	return Object.keys(myAnemones).reduce(function(moves, id) {
+		moves[id] = {
 			action : actions[~~(Math.random() * actions.length)],
 			direction : ~~(Math.random() * 6)
 		};
-	});
+		return moves;
+	}, {});
 }

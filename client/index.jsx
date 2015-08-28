@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 import 'codemirror/lib/codemirror.css!';
 
-import MainLayout from './components/layouts/MainLayout';
+import MainLayout from '/client/components/layouts/MainLayout';
 
-import injectTapEventPlugin from "react-tap-event-plugin";
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 injectTapEventPlugin();
 

@@ -1,0 +1,4 @@
+jspm_packages/**/*.js
+client/config.js
+client/bot/prefix.js
+shared/bots/**/*.js
