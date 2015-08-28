@@ -12,4 +12,4 @@ jspm install
 node server/index.js
 ```
 
-that should install dependencies and open a webserver on localhost:8080
+that should install dependencies and open a webserver on localhost:3000
