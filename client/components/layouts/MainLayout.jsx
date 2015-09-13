@@ -18,28 +18,20 @@ export default class MainLayout extends React.Component {
 		super(props);
 
 		const players = _.times(6, (n) => {
-			return {
-				id: n.toString()
-			};
-		}),
+				return {
+					id: n.toString()
+				};
+			}),
 			gameState = Engine.getRandomInitialState(48, 20, _.keys(players));
 
 		this.state = {
 			gameState: gameState
 		};
 
-		let bots = null;
-		Promise.all(_.map(players, () => {
-			return Bot.createBot('/shared/bots/beginner.js');
-		})).then((results) => {
-			bots = new Map(_.zip(players, results));
-			test();
-		});
-
 		let test = () => {
 			let inputs = [];
-			for(let [player, bot] of bots.entries()){
-				inputs.push(bot.getMoves(this.state.gameState, player));
+			for(let player of players){
+				inputs.push(bot.getMoves(this.state.gameState, player, beginnerCode));
 			}
 			Promise.settle(inputs).then((results) =>{
 				let moves = _.chain(results)
@@ -52,7 +44,16 @@ export default class MainLayout extends React.Component {
 				});
 				setTimeout(test, 0);
 			});
-		}
+		};
+
+		let bot, beginnerCode;
+		Promise
+			.all([Bot.createBotAsync(), $.get('/shared/bots/beginner.js')])
+			.then(([_bot, _beginnerCode]) => {
+				bot = _bot;
+				beginnerCode = _beginnerCode;
+				test();
+			});
 	}
 
 	getChildContext() {

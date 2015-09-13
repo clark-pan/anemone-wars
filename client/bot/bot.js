@@ -27,12 +27,8 @@ export default class Bot {
 		this[_counter] = 0;
 	}
 
-	startGame(state) {
-		return this[_postMessage]('start', state);
-	}
-
-	getMoves(state, playerId) {
-		return this[_postMessage]('getMoves', state, playerId).then(_.property(0));
+	getMoves(state, playerId, playerCode) {
+		return this[_postMessage]('getMoves', state, playerId, playerCode).then(_.property(0));
 	}
 
 	destroy() {
@@ -66,17 +62,8 @@ export default class Bot {
 		// TODO implement
 	}
 
-	static createDynamicBot(script) {
-		return Promise
-			.all([$.get('/client/bot/prefix.js'), script])
-			.then((scripts) => {
-				const blob = new Blob(scripts, { type: 'application/javascript' }),
-					worker = new Worker(URL.createObjectURL(blob));
-				return new Bot(worker);
-			});
-	}
-
-	static createBot(path) {
-		return Bot.createDynamicBot($.get(path));
+	static createBotAsync() {
+		const worker = new Worker('/client/bot/bot-runner.js');
+		return Promise.try(() => new Bot(worker));
 	}
 }

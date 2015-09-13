@@ -13,8 +13,20 @@ import _ from 'lodash';
  * 0,2       2,2       4,2
  *      1,2       3,2       5,2
  *
- * The edges connect to each other, and thus the width needs to be an even number
+ * The edges connect to each other, and thus the width needs to be an even number.
+ *
+ * Each tile looks like such:
+ *
+ *    -- 0 --
+ *   /       \
+ *  5         1
+ * /           \
+ * \           /
+ *  4         2
+ *   \       /
+ *    -- 3 --
  */
+
 /**
  * @typedef {Object} Tile
  * @description - A tile

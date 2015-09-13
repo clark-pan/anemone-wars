@@ -6,7 +6,7 @@ Engage in all out tentacle warfare against your fellow Actiniaria. Make your ane
 
 For now, install NodeJS, then run (in the directory)
 ```
-npm install -g jspm http-server
+npm install -g jspm
 npm install
 jspm install
 node server/index.js
