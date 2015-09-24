@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import _ from 'lodash';
 import Promise from 'bluebird';
 
@@ -62,8 +61,8 @@ export default class Bot {
 		// TODO implement
 	}
 
-	static createBotAsync() {
+	static createBot() {
 		const worker = new Worker('/client/bot/bot-runner.js');
-		return Promise.try(() => new Bot(worker));
+		return new Bot(worker);
 	}
 }

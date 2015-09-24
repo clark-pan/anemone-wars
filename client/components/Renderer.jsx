@@ -31,7 +31,6 @@ export default class Renderer {
 	}
 
 	draw(state) {
-		console.log(Object.keys(state.anemones).length);
 		this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
 		for (let x = 0; x < state.board.length; x++) {
 			for (let y = 0; y < state.board[x].length; y++) {

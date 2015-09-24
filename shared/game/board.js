@@ -61,12 +61,12 @@ export function createBoard(width, height) {
 	});
 }
 
-export function getTileFromPosition(board, position) {
-	return board[position.x][position.y];
+export function getTileFromPosition(board, [x, y]) {
+	return board[x][y];
 }
 
-export function setTileFromPosition(board, position, tile) {
-	board[position.x][position.y] = tile;
+export function setTileFromPosition(board, [x, y], tile) {
+	board[x][y] = tile;
 }
 
 export function getPositionFromDirection(board, position, direction) {
