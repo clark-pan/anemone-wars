@@ -1,0 +1,38 @@
+.player-controls {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+	.player-controls--list {
+		
+	}
+
+	.player-controls--editor-pane {
+		position: absolute;
+		width: 400px;
+		right: 90px;
+		top: 0px;
+		
+		opacity: 1;
+		transform: translateX(0);
+		transition: opacity 250ms ease-out, transform 250ms ease-out;
+
+		will-change: transform opacity;
+	}
+
+	.player-controls--editor-pane-hidden {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+
+	.player-controls--editor-header {
+		padding: 0px 16px 4px 72px;
+		position: relative;
+	}
+
+	.player-controls--editor-avatar {
+		position: absolute;
+		left: 16px;
+		top: 16px;
+	}

@@ -3,7 +3,9 @@ import React from 'react';
 import mui from 'material-ui';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 
-export default class Controls extends React.Component {
+import './SpeedControls.css!';
+
+export default class SpeedControls extends React.Component {
 	render() {
 		const btnStyle = {
 				height: this.context.muiTheme.spacing.iconSize * 2,
@@ -18,7 +20,7 @@ export default class Controls extends React.Component {
 			playOrPauseBtn = <mui.IconButton onTouchTap={() => this.props.onPlayStateChange(true)} iconClassName="material-icons" style={btnStyle}>pause_arrow</mui.IconButton>;
 		}
 		return (
-			<mui.Paper className="controls">
+			<mui.Paper className="speed-controls">
 				{playOrPauseBtn}
 				<mui.IconMenu iconButtonElement={speedBtn} openDirection="top-right" value={this.props.speed} onChange={(e, value) => this.props.onSpeedChange(value)}>
 					<MenuItem primaryText="1x" value="1" />
@@ -30,17 +32,17 @@ export default class Controls extends React.Component {
 	}
 }
 
-Controls.displayName = 'Controls';
-Controls.contextTypes = {
+SpeedControls.displayName = 'SpeedControls';
+SpeedControls.contextTypes = {
 	muiTheme: React.PropTypes.object
 };
-Controls.propTypes = {
+SpeedControls.propTypes = {
 	onSpeedChange: React.PropTypes.func.isRequired,
 	onPlayStateChange: React.PropTypes.func.isRequired,
 	isPlaying: React.PropTypes.bool.isRequired,
 	speed: React.PropTypes.oneOf(['1', '2', '3'])
 };
-Controls.defaultProps = {
+SpeedControls.defaultProps = {
 	onSpeedChange: () => {},
 	onPlayStateChange: () => {}
 };

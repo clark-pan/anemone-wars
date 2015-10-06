@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Renderer from '/client/components/Renderer';
+import Renderer from './Renderer';
+
+import './Board.css!';
 
 const _canvas = Symbol('canvas'), _resizeHandler = Symbol('resizeHandler'),
 	_lastRenderedTurn = Symbol('lastRenderedTurn'), _draw = Symbol('draw');
@@ -15,7 +17,7 @@ export default class Board extends React.Component {
 	componentDidMount() {
 		this[_canvas] = document.createElement('canvas');
 		this[_canvas].classList.add('board-canvas');
-		this.renderer = new Renderer(this[_canvas].getContext('2d'), this.props.game);
+		this.renderer = new Renderer(this[_canvas].getContext('2d'));
 		ReactDOM.findDOMNode(this.refs.container).appendChild(this[_canvas]);
 
 		this[_resizeHandler] = () => {
@@ -35,12 +37,12 @@ export default class Board extends React.Component {
 	}
 
 	componentDidUpdate() {
-		this[_draw](this.props.game);
+		this[_draw]();
 	}
 
 	[_draw]() {
 		this[_lastRenderedTurn] = this.props.game.turn;
-		this.renderer.draw(this.props.game);
+		this.renderer.draw(this.props.game, this.props.players);
 	}
 
 	render() {
@@ -52,7 +54,8 @@ export default class Board extends React.Component {
 
 Board.displayName = 'Board';
 Board.propTypes = {
-	game: React.PropTypes.object.isRequired
+	game: React.PropTypes.object.isRequired,
+	players: React.PropTypes.object.isRequired
 };
 Board.styles = {
 	position: 'absolute',

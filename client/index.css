@@ -1,0 +1,17 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,500");
+@import url("http://fonts.googleapis.com/icon?family=Material+Icons");
+
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	display: block;
+}

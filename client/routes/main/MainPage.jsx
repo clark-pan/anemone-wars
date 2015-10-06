@@ -3,28 +3,42 @@ import _ from 'lodash';
 import Promise from 'bluebird';
 
 // Views
-import BoardComponent from '/client/components/Board';
-import Controls from '/client/components/Controls';
+import BoardComponent from '/client/components/Board/Board';
+import SpeedControls from '/client/components/SpeedControls/SpeedControls';
+import PlayerControls from '/client/components/PlayerControls/PlayerControls';
 import mui from 'material-ui';
 
 import * as Engine from '/shared/game/engine.js';
 import Bot from '/client/bot/bot.js';
 
-const ThemeManager = new mui.Styles.ThemeManager();
+const ThemeManager = new mui.Styles.ThemeManager(),
+	PLAYER_COLOURS = [
+		'rgba(255, 0, 0, 1)', // red
+		'rgba(0, 255, 0, 1)', // green
+		'rgba(0, 0, 255, 1)', // blue
+		'rgba(255, 255, 0, 1)', // yellow
+		'rgba(255, 0, 255, 1)', // magenta
+		'rgba(0, 255, 255, 1)' // teal
+	];
+
 ThemeManager.setTheme(ThemeManager.types.LIGHT);
 
-export default class MainLayout extends React.Component {
+export default class MainPage extends React.Component {
 	constructor(props) {
 		super(props);
 
 		const
-			players = _.times(6, (n) => {
-				return {
-					id: n.toString(),
-					code: fetch('/shared/bots/beginner.js')
-						.then((res) => res.text())
-				};
-			}),
+			players = _.chain(6)
+				.times((n) => {
+					return {
+						id: n.toString(),
+						colour: PLAYER_COLOURS[n],
+						avatar: 'https://avatars.githubusercontent.com/u/1161431?v=3&s=56',
+						code: {}
+					};
+				})
+				.indexBy('id')
+				.value(),
 			gameState = Engine.getRandomInitialState(48, 20, _.keys(players));
 
 		this.state = {
@@ -94,12 +108,12 @@ export default class MainLayout extends React.Component {
 	}
 
 	async getNextState() {
-		let playerCodes = await Promise.all(this.state.players.map((player) => player.code)),
-			moves = await Promise
-				.settle(
-					this.state.players.map((player, i) => this.bot.getMoves(this.state.gameState, player, playerCodes[i]))
-				).map((r) => r.isFulfilled() ? r.value() : {})
-				.reduce((acc, moreMoves) => _.assign(acc, moreMoves));
+		let moves = await Promise
+			.settle(
+				_.map(this.state.players, (player) => this.bot.getMoves(this.state.gameState, player, player.code))
+			)
+			.map((r) => r.isFulfilled() ? r.value() : {})
+			.reduce((acc, moreMoves) => _.assign(acc, moreMoves));
 
 		return Engine.resolve(this.state.gameState, moves);
 	}
@@ -107,21 +121,22 @@ export default class MainLayout extends React.Component {
 	render() {
 		return (
 			<div>
-				<BoardComponent game={this.state.gameState} />
+				<BoardComponent game={this.state.gameState} players={this.state.players} />
 				<div className="overlay">
-					<Controls
+					<SpeedControls
 						onSpeedChange={this.onSpeedUpdate.bind(this)}
 						onPlayStateChange={this.onPlayStateChange.bind(this)}
 						isPlaying={this.state.simulationInfo.isPlaying}
 						speed={this.state.simulationInfo.speed}
 					/>
+					<PlayerControls players={this.state.players} />
 				</div>
 			</div>
 		);
 	}
 }
 
-MainLayout.displayName = 'MainLayout';
-MainLayout.childContextTypes = {
+MainPage.displayName = 'MainPage';
+MainPage.childContextTypes = {
 	muiTheme: React.PropTypes.object
 };
