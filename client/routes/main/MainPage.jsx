@@ -6,22 +6,20 @@ import Promise from 'bluebird';
 import BoardComponent from '/client/components/Board/Board';
 import SpeedControls from '/client/components/SpeedControls/SpeedControls';
 import PlayerControls from '/client/components/PlayerControls/PlayerControls';
-import mui from 'material-ui';
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import LightTheme from 'material-ui/lib/styles/raw-themes/light-raw-theme.js';
 
 import * as Engine from '/shared/game/engine.js';
 import Bot from '/client/bot/bot.js';
 
-const ThemeManager = new mui.Styles.ThemeManager(),
-	PLAYER_COLOURS = [
-		'rgba(255, 0, 0, 1)', // red
-		'rgba(0, 255, 0, 1)', // green
-		'rgba(0, 0, 255, 1)', // blue
-		'rgba(255, 255, 0, 1)', // yellow
-		'rgba(255, 0, 255, 1)', // magenta
-		'rgba(0, 255, 255, 1)' // teal
-	];
-
-ThemeManager.setTheme(ThemeManager.types.LIGHT);
+const PLAYER_COLOURS = [
+	'rgba(255, 0, 0, 1)', // red
+	'rgba(0, 255, 0, 1)', // green
+	'rgba(0, 0, 255, 1)', // blue
+	'rgba(255, 255, 0, 1)', // yellow
+	'rgba(255, 0, 255, 1)', // magenta
+	'rgba(0, 255, 255, 1)' // teal
+];
 
 export default class MainPage extends React.Component {
 	constructor(props) {
@@ -34,10 +32,10 @@ export default class MainPage extends React.Component {
 						id: n.toString(),
 						colour: PLAYER_COLOURS[n],
 						avatar: 'https://avatars.githubusercontent.com/u/1161431?v=3&s=56',
-						code: {}
+						code: ''
 					};
 				})
-				.indexBy('id')
+				.keyBy('id')
 				.value(),
 			gameState = Engine.getRandomInitialState(48, 20, _.keys(players));
 
@@ -57,7 +55,7 @@ export default class MainPage extends React.Component {
 
 	getChildContext() {
 		return {
-			muiTheme: ThemeManager.getCurrentTheme()
+			muiTheme: ThemeManager.getMuiTheme(LightTheme)
 		};
 	}
 

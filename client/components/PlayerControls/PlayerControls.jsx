@@ -6,7 +6,7 @@ import {
 	Card, CardMedia, CardActions,
 	FlatButton, FloatingActionButton,
 	Avatar,
-	SelectField
+	MenuItem, SelectField
 } from 'material-ui';
 
 import CodeMirror from 'JedWatson/react-codemirror';
@@ -18,7 +18,6 @@ export default class PlayerControls extends React.Component {
 		super(props);
 
 		this.state = {
-			selectedValue: '/shared/bots/empty.js',
 			selectedPlayer: null
 		};
 	}
@@ -41,7 +40,7 @@ export default class PlayerControls extends React.Component {
 					transition: 'transform 200ms ease-out',
 					transform: isActive ? 'translateX(-20px)' : 'translateX(0px)'
 				},
-				{ miniSize } = this.context.muiTheme.component.floatingActionButton;
+				{ miniSize } = this.context.muiTheme.floatingActionButton;
 
 			return (
 				<FloatingActionButton style={style} key={key} mini={true} onClick={this.onPlayerSelect.bind(this, player)}>
@@ -78,14 +77,13 @@ export default class PlayerControls extends React.Component {
 					<div className="player-controls--editor-header">
 						<Avatar src={this.props.players[0].avatar} className="player-controls--editor-avatar" style={paneAvatarStyle} />
 						<SelectField
-							menuItems={menuItems}
 							fullWidth={true}
 							floatingLabelText="Select bot"
-							value={this.state.selectedValue}
-							onChange={(e, selectedIndex, menuItem) => this.setState({
-								selectedValue: menuItem.payload
+						>
+							{_.map(menuItems, (menuItem, i) => {
+								return <MenuItem key={i} value={menuItem} primaryText={menuItem.text} />;
 							})}
-						/>
+						</SelectField>
 					</div>
 					<CardMedia>
 						<CodeMirror options={editorOptions} />

@@ -8,7 +8,7 @@ import './SpeedControls.css!';
 export default class SpeedControls extends React.Component {
 	render() {
 		const btnStyle = {
-				height: this.context.muiTheme.spacing.iconSize * 2,
+				height: this.context.muiTheme.baseTheme.spacing.iconSize * 2,
 				verticalAlign: 'top'
 			},
 			speedBtn = <mui.FlatButton label={this.props.speed + 'x'} style={btnStyle}></mui.FlatButton>;
