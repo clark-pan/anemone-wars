@@ -1,56 +1,29 @@
-import React from 'react';
 import _ from 'lodash';
-import Promise from 'bluebird';
+
+import React from 'react';
+const { PropTypes, Component } = React;
+
+import { connect } from 'react-redux';
+import { updateGamePlayback, SPEED_MAP } from '/client/domain/game/GameActions.js';
+
+// Material UI
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import LightTheme from 'material-ui/lib/styles/raw-themes/light-raw-theme.js';
 
 // Views
 import BoardComponent from '/client/components/Board/Board';
 import SpeedControls from '/client/components/SpeedControls/SpeedControls';
-import PlayerControls from '/client/components/PlayerControls/PlayerControls';
-import ThemeManager from 'material-ui/lib/styles/theme-manager';
-import LightTheme from 'material-ui/lib/styles/raw-themes/light-raw-theme.js';
+// import PlayerControls from '/client/components/PlayerControls/PlayerControls';
 
-import * as Engine from '/shared/game/engine.js';
-import Bot from '/client/bot/bot.js';
+const SPEED_OPTION_TEXT = {
+	'slow': 'Slow',
+	'fast': 'Fast',
+	'faster': 'Faster'
+};
 
-const PLAYER_COLOURS = [
-	'rgba(255, 0, 0, 1)', // red
-	'rgba(0, 255, 0, 1)', // green
-	'rgba(0, 0, 255, 1)', // blue
-	'rgba(255, 255, 0, 1)', // yellow
-	'rgba(255, 0, 255, 1)', // magenta
-	'rgba(0, 255, 255, 1)' // teal
-];
-
-export default class MainPage extends React.Component {
+class MainPage extends Component {
 	constructor(props) {
 		super(props);
-
-		const
-			players = _.chain(6)
-				.times((n) => {
-					return {
-						id: n.toString(),
-						colour: PLAYER_COLOURS[n],
-						avatar: 'https://avatars.githubusercontent.com/u/1161431?v=3&s=56',
-						code: ''
-					};
-				})
-				.keyBy('id')
-				.value(),
-			gameState = Engine.getRandomInitialState(48, 20, _.keys(players));
-
-		this.state = {
-			players: players,
-			gameState: gameState,
-			simulationInfo: {
-				isPlaying: false,
-				speed: '1'
-			}
-		};
-
-		this.bot = Bot.createBot();
-		this._hasTickQueued = false;
-		this._delay = 1000;
 	}
 
 	getChildContext() {
@@ -60,74 +33,25 @@ export default class MainPage extends React.Component {
 	}
 
 	onSpeedUpdate(speed) {
-		let delay;
-		switch (speed) {
-			case '3' : delay = 100; break;
-			case '2' : delay = 500; break;
-			case '1' : default: delay = 1000; break;
-		}
-		this.setState(React.addons.update(this.state, {
-			simulationInfo: {
-				speed: {
-					$set: speed
-				}
-			}
-		}));
-		this._delay = delay;
+		this.props.updateGamePlayback(this.props.game.running, speed);
 	}
 
-	onPlayStateChange(isPlaying) {
-		if (isPlaying !== this.state.simulationInfo.isPlaying) {
-			this.setState(React.addons.update(this.state, {
-				simulationInfo: {
-					isPlaying: {
-						$set: isPlaying
-					}
-				}
-			}));
-
-			if (isPlaying && !this._hasTickQueued) {
-				this.nextTick();
-			}
-		}
-	}
-
-	async nextTick() {
-		this._hasTickQueued = true;
-		let nextState = await this.getNextState();
-		this.setState({
-			gameState: nextState
-		});
-		await Promise.delay(this._delay);
-		this._hasTickQueued = false;
-		if (this.state.simulationInfo.isPlaying) {
-			this.nextTick();
-		}
-	}
-
-	async getNextState() {
-		let moves = await Promise
-			.settle(
-				_.map(this.state.players, (player) => this.bot.getMoves(this.state.gameState, player, player.code))
-			)
-			.map((r) => r.isFulfilled() ? r.value() : {})
-			.reduce((acc, moreMoves) => _.assign(acc, moreMoves));
-
-		return Engine.resolve(this.state.gameState, moves);
+	onPlayStateChange(running) {
+		this.props.updateGamePlayback(running, this.props.game.speed);
 	}
 
 	render() {
 		return (
 			<div>
-				<BoardComponent game={this.state.gameState} players={this.state.players} />
+				<BoardComponent game={this.props.game.gameState} players={this.props.game.players} />
 				<div className="overlay">
 					<SpeedControls
 						onSpeedChange={this.onSpeedUpdate.bind(this)}
 						onPlayStateChange={this.onPlayStateChange.bind(this)}
-						isPlaying={this.state.simulationInfo.isPlaying}
-						speed={this.state.simulationInfo.speed}
+						isPlaying={this.props.game.running}
+						speedOptions={SPEED_OPTION_TEXT}
+						speedValue={this.props.game.speed}
 					/>
-					<PlayerControls players={this.state.players} />
 				</div>
 			</div>
 		);
@@ -136,5 +60,26 @@ export default class MainPage extends React.Component {
 
 MainPage.displayName = 'MainPage';
 MainPage.childContextTypes = {
-	muiTheme: React.PropTypes.object
+	muiTheme: PropTypes.object
 };
+MainPage.propTypes = {
+	game: PropTypes.shape({
+		gameState: PropTypes.object,
+		players: PropTypes.arrayOf(PropTypes.object),
+		running: PropTypes.bool,
+		speed: PropTypes.oneOf(_.keys(SPEED_MAP))
+	}).isRequired,
+	updateGamePlayback: PropTypes.func.isRequired
+};
+
+export default connect((state) => {
+	return {
+		game: state.game
+	};
+}, (dispatch) => {
+	return {
+		updateGamePlayback: (running, speed) => {
+			dispatch(updateGamePlayback(running, speed));
+		}
+	};
+})(MainPage);

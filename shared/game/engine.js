@@ -38,27 +38,38 @@ import * as Board from './board';
 
 const parseInt10 = (n) => parseInt(n, 10);
 
-export function getInitialState(width, height) {
+export function createGame(width, height) {
 	return {
 		board: Board.createBoard(width, height),
 		anemones: Object.create(null),
-		turn: 0,
+		turn: -1,
 		_lastAnemoneCounter: 0
 	};
 }
 
-export function getRandomInitialState(width, height, ownerIds) {
-	const state = getInitialState(width, height);
+export function startGame(game, ownerIds) {
+	if (game.turn !== -1) {
+		throw new Error('Game has already started');
+	}
+
 	_.each(ownerIds, (ownerId) => {
-		const anemoneId = state._lastAnemoneCounter++;
+		const anemoneId = game._lastAnemoneCounter++;
 		let position, x, y;
 		do {
-			position = [_.random(width - 1), _.random(height - 1)];
+			position = [_.random(game.width - 1), _.random(game.height - 1)];
 			[x, y] = position;
-		} while (state.board[x][y].occupantId != null)
-		state.anemones[anemoneId] = Anemone.create(anemoneId, ownerId, position);
-		state.board[x][y].occupantId = anemoneId;
+		} while (game.board[x][y].occupantId != null)
+		game.anemones[anemoneId] = Anemone.create(anemoneId, ownerId, position);
+		game.board[x][y].occupantId = anemoneId;
 	});
+	game.turn = 0;
+
+	return game;
+}
+
+export function getRandomInitialState(width, height, ownerIds) {
+	const state = createGame(width, height);
+	startGame(state, ownerIds);
 	return state;
 }
 

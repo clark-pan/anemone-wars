@@ -4,9 +4,9 @@ import Promise from 'bluebird';
 const _messages = Symbol('messages'), _worker = Symbol('worker'), _counter = Symbol('counter'),
 	_onMessage = Symbol('onMessage'), _onError = Symbol('onError'), _postMessage = Symbol('_postMessage');
 
-function defer(){
+function defer() {
 	var resolve, reject;
-	var promise = new Promise(function() {
+	var promise = new Promise(() => {
 		resolve = arguments[0];
 		reject = arguments[1];
 	});
@@ -17,10 +17,10 @@ function defer(){
 	};
 }
 
-export default class Bot {
-	constructor(worker) {
+export class MoveService {
+	constructor() {
 		this[_messages] = new Map();
-		this[_worker] = worker;
+		this[_worker] = new Worker('/client/service/MoveServiceWorker.js');
 		this[_worker].addEventListener('message', this[_onMessage].bind(this));
 		this[_worker].addEventListener('error', this[_onError].bind(this));
 		this[_counter] = 0;
@@ -60,9 +60,6 @@ export default class Bot {
 	[_onError]() {
 		// TODO implement
 	}
-
-	static createBot() {
-		const worker = new Worker('/client/bot/bot-runner.js');
-		return new Bot(worker);
-	}
 }
+
+export default new MoveService();

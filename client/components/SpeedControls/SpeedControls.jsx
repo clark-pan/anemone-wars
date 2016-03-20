@@ -1,31 +1,40 @@
+import _ from 'lodash';
+
 import React from 'react';
+const { PropTypes, Component } = React;
 
 import mui from 'material-ui';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 
 import './SpeedControls.css!';
 
-export default class SpeedControls extends React.Component {
+export default class SpeedControls extends Component {
 	render() {
 		const btnStyle = {
-				height: this.context.muiTheme.baseTheme.spacing.iconSize * 2,
-				verticalAlign: 'top'
-			},
-			speedBtn = <mui.FlatButton label={this.props.speed + 'x'} style={btnStyle}></mui.FlatButton>;
-		let playOrPauseBtn;
+			height: this.context.muiTheme.baseTheme.spacing.iconSize * 2,
+			verticalAlign: 'top'
+		};
 
+
+		let playOrPauseBtn;
 		if (this.props.isPlaying) {
 			playOrPauseBtn = <mui.IconButton onTouchTap={() => this.props.onPlayStateChange(false)} iconClassName="material-icons" style={btnStyle}>play_arrow</mui.IconButton>;
 		} else {
 			playOrPauseBtn = <mui.IconButton onTouchTap={() => this.props.onPlayStateChange(true)} iconClassName="material-icons" style={btnStyle}>pause_arrow</mui.IconButton>;
 		}
+
+
+		let speedOptions = _.map(this.props.speedOptions, (text, value) => {
+			return <MenuItem primaryText={text} value={value} key={value} />;
+		});
+		let speedBtnLabel = _.find(this.props.speedOptions, (text, value) => value === this.props.speedValue) || '';
+		let speedBtn = <mui.FlatButton label={speedBtnLabel} style={btnStyle}></mui.FlatButton>;
+
 		return (
 			<mui.Paper className="speed-controls">
 				{playOrPauseBtn}
-				<mui.IconMenu iconButtonElement={speedBtn} openDirection="top-right" value={this.props.speed} onChange={(e, value) => this.props.onSpeedChange(value)}>
-					<MenuItem primaryText="1x" value="1" />
-					<MenuItem primaryText="2x" value="2" />
-					<MenuItem primaryText="3x" value="3" />
+				<mui.IconMenu iconButtonElement={speedBtn} openDirection="top-right" value={this.props.speedValue} onChange={(e, value) => this.props.onSpeedChange(value)}>
+					{speedOptions}
 				</mui.IconMenu>
 			</mui.Paper>
 		);
@@ -34,13 +43,14 @@ export default class SpeedControls extends React.Component {
 
 SpeedControls.displayName = 'SpeedControls';
 SpeedControls.contextTypes = {
-	muiTheme: React.PropTypes.object
+	muiTheme: PropTypes.object
 };
 SpeedControls.propTypes = {
-	onSpeedChange: React.PropTypes.func.isRequired,
-	onPlayStateChange: React.PropTypes.func.isRequired,
-	isPlaying: React.PropTypes.bool.isRequired,
-	speed: React.PropTypes.oneOf(['1', '2', '3'])
+	onSpeedChange: PropTypes.func.isRequired,
+	onPlayStateChange: PropTypes.func.isRequired,
+	isPlaying: PropTypes.bool.isRequired,
+	speedValue: PropTypes.string,
+	speedOptions: PropTypes.objectOf(PropTypes.string)
 };
 SpeedControls.defaultProps = {
 	onSpeedChange: () => {},
