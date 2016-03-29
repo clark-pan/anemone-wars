@@ -32,7 +32,8 @@
       "react-router": "npm:react-router@^1.0.0-rc1",
       "react-tap-event-plugin": "npm:react-tap-event-plugin@^0.2.0",
       "redux": "npm:redux@^3.0.0",
-      "redux-thunk": "npm:redux-thunk@^2.0.1"
+      "redux-thunk": "npm:redux-thunk@^2.0.1",
+      "text": "github:systemjs/plugin-text@^0.0.7"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

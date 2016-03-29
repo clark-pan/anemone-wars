@@ -4,9 +4,20 @@ import { NEW_GAME, START_GAME, UPDATE_GAME_STATE, UPDATE_GAME_PLAYBACK } from '.
 
 import * as Engine from '/shared/game/engine.js';
 
+// Temporary test bot
+import testCode from '/shared/bots/beginner.js!text';
+
 function createDefaultState(width, height) {
 	return {
-		players: [],
+		players: _.times(6, (i) => {
+			return {
+				id: i,
+				code: testCode,
+				profile: {
+					colour: '#dddddd'
+				}
+			};
+		}),
 		gameState: Engine.createGame(width, height),
 		running: false,
 		speed: 'slow',
@@ -23,7 +34,7 @@ export default function gameReducer(state = null, action) {
 		case START_GAME:
 			return {
 				...state,
-				gameState: Engine.getRandomInitialState(state.gameState, _.map(action.players, 'id'))
+				gameState: Engine.startGame(state.gameState, _.map(action.players, 'id'))
 			};
 		case UPDATE_GAME_STATE:
 			return {

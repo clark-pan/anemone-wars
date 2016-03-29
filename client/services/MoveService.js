@@ -1,14 +1,14 @@
-import _ from 'lodash';
 import Promise from 'bluebird';
 
 const _messages = Symbol('messages'), _worker = Symbol('worker'), _counter = Symbol('counter'),
-	_onMessage = Symbol('onMessage'), _onError = Symbol('onError'), _postMessage = Symbol('_postMessage');
+	_workerError = Symbol('workerError'),
+	_onMessage = Symbol('onMessage'), _onError = Symbol('onError'), _postMessage = Symbol('postMessage');
 
 function defer() {
 	var resolve, reject;
-	var promise = new Promise(() => {
-		resolve = arguments[0];
-		reject = arguments[1];
+	var promise = new Promise((_resolve, _reject) => {
+		resolve = _resolve;
+		reject = _reject;
 	});
 	return {
 		resolve: resolve,
@@ -20,14 +20,15 @@ function defer() {
 export class MoveService {
 	constructor() {
 		this[_messages] = new Map();
-		this[_worker] = new Worker('/client/service/MoveServiceWorker.js');
+		this[_worker] = new Worker('/client/services/MoveServiceWorker.js');
 		this[_worker].addEventListener('message', this[_onMessage].bind(this));
 		this[_worker].addEventListener('error', this[_onError].bind(this));
+		this[_workerError] = null;
 		this[_counter] = 0;
 	}
 
-	getMoves(state, playerId, playerCode) {
-		return this[_postMessage]('getMoves', state, playerId, playerCode).then(_.property(0));
+	getPlayerMoveAsync(state, playerId, playerCode) {
+		return this[_postMessage]('getMoves', state, playerId, playerCode);
 	}
 
 	destroy() {
@@ -38,6 +39,8 @@ export class MoveService {
 	}
 
 	[_postMessage](action, ...args) {
+		if (this[_workerError]) return Promise.reject(this[_workerError]);
+
 		const message = {
 			id: this[_counter]++,
 			deferred: defer()
@@ -49,16 +52,20 @@ export class MoveService {
 	}
 
 	[_onMessage](e) {
-		const [messageId, ...args] = e.data,
+		const [messageId, ret] = e.data,
 			message = this[_messages].get(messageId);
 		if (message) {
-			message.deferred.resolve(args);
+			message.deferred.resolve(ret);
 			this[_messages].delete(messageId);
 		}
 	}
 
 	[_onError]() {
-		// TODO implement
+		this[_workerError] = new Error('Unable to instantiate worker');
+		this[_messages].forEach((message) => {
+			message.deferred.reject(this[_workerError]);
+		});
+		this[_messages] = new Map();
 	}
 }
 

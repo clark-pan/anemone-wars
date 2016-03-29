@@ -43,7 +43,7 @@ class MainPage extends Component {
 	render() {
 		return (
 			<div>
-				<BoardComponent game={this.props.game.gameState} players={this.props.game.players} />
+				<BoardComponent game={this.props.game} />
 				<div className="overlay">
 					<SpeedControls
 						onSpeedChange={this.onSpeedUpdate.bind(this)}

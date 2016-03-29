@@ -47,6 +47,7 @@ System.config({
     "react-tap-event-plugin": "npm:react-tap-event-plugin@0.2.2",
     "redux": "npm:redux@3.3.1",
     "redux-thunk": "npm:redux-thunk@2.0.1",
+    "text": "github:systemjs/plugin-text@0.0.7",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

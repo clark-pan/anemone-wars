@@ -33,7 +33,8 @@ export default class Board extends React.Component {
 	}
 
 	shouldComponentUpdate(nextProps) {
-		return nextProps.game !== this.props.game || nextProps.game.turn !== this[_lastRenderedTurn];
+		return true;
+		return nextProps.game !== this.props.game || nextProps.game.gameState !== this.props.game.gameState;
 	}
 
 	componentDidUpdate() {
@@ -42,7 +43,7 @@ export default class Board extends React.Component {
 
 	[_draw]() {
 		this[_lastRenderedTurn] = this.props.game.turn;
-		this.renderer.draw(this.props.game, this.props.players);
+		this.renderer.draw(this.props.game);
 	}
 
 	render() {
@@ -54,8 +55,7 @@ export default class Board extends React.Component {
 
 Board.displayName = 'Board';
 Board.propTypes = {
-	game: React.PropTypes.object.isRequired,
-	players: React.PropTypes.object.isRequired
+	game: React.PropTypes.object.isRequired
 };
 Board.styles = {
 	position: 'absolute',

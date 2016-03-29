@@ -35,12 +35,14 @@ export function generateNextGameStateAsync(game) {
 		if (game.gameState.turn === -1) {
 			dispatch(startGame(game.players));
 		}
-		
+
 		let moves = await Promise
-			.settle(
-				_.map(game.players, (player) => MoveService.getMoves(game.gameState, player, player.code))
+			.all(
+				_.map(game.players, (player) => MoveService
+					.getPlayerMoveAsync(game.gameState, player, player.code)
+					.catch(() => {})
+				)
 			)
-			.map((r) => r.isFulfilled() ? r.value() : {})
 			.reduce((acc, moreMoves) => _.assign(acc, moreMoves));
 
 		let nextState = Engine.resolve(game.gameState, moves);

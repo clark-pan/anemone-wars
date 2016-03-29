@@ -17,11 +17,12 @@ export default class Renderer {
 		this[_playerCounter] = 0;
 	}
 
-	draw(state = {}, players = {}) {
+	draw(game = {}) {
+		const state = game.gameState;
 		this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
 		for (let x = 0; x < state.board.length; x++) {
 			for (let y = 0; y < state.board[x].length; y++) {
-				this[_drawTile](state.board[x][y], state, players);
+				this[_drawTile](state.board[x][y], state, game.players);
 			}
 		}
 	}
@@ -32,7 +33,7 @@ export default class Renderer {
 			centerY = y * HEX_HEIGHT_RADIUS * 2 + HEX_HEIGHT_RADIUS * (x % 2 ? 2 : 1),
 			anemone = state.anemones[tile.occupantId],
 			playerId = anemone ? anemone.ownerId : null,
-			colour = players[playerId] ? players[playerId].colour : null;
+			colour = players[playerId] ? players[playerId].profile.colour : null;
 
 		this[_drawHex](centerX, centerY, colour);
 		this.ctx.save();

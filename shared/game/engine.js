@@ -3,6 +3,8 @@ import _ from 'lodash';
 import * as Anemone from './anemone';
 import * as Board from './board';
 
+// TODO refactor this to be immutable
+
 /**
  * @typedef {Object} Engine.Move
  * @description - A move a player can issue to an anemone
@@ -47,24 +49,24 @@ export function createGame(width, height) {
 	};
 }
 
-export function startGame(game, ownerIds) {
-	if (game.turn !== -1) {
+export function startGame(state, ownerIds) {
+	if (state.turn !== -1) {
 		throw new Error('Game has already started');
 	}
+	let tiles = _.chain(state.board)
+		.flattenDeep(state.board)
+		.shuffle()
+		.value();
 
 	_.each(ownerIds, (ownerId) => {
-		const anemoneId = game._lastAnemoneCounter++;
-		let position, x, y;
-		do {
-			position = [_.random(game.width - 1), _.random(game.height - 1)];
-			[x, y] = position;
-		} while (game.board[x][y].occupantId != null)
-		game.anemones[anemoneId] = Anemone.create(anemoneId, ownerId, position);
-		game.board[x][y].occupantId = anemoneId;
+		const anemoneId = state._lastAnemoneCounter++;
+		let tile = tiles.pop(), position = [tile.x, tile.y];
+		state.anemones[anemoneId] = Anemone.create(anemoneId, ownerId, position);
+		tile.occupantId = anemoneId;
 	});
-	game.turn = 0;
+	state.turn = 0;
 
-	return game;
+	return state;
 }
 
 export function getRandomInitialState(width, height, ownerIds) {
@@ -257,28 +259,27 @@ function resolveDeath(state) {
  */
 
 export function resolve(state, moves) {
-	const nextState = _.cloneDeep(state),
-		moveSets = _.reduce(moves, (_moveSets, move, anemoneId) => {
-			if (_moveSets[move.action]) {
-				_moveSets[move.action][anemoneId] = move;
-			}
-			return _moveSets;
-		}, {
-			[Anemone.STATES.DEFEND]: Object.create(null),
-			[Anemone.STATES.ATTACK]: Object.create(null),
-			[Anemone.STATES.REGENERATE]: Object.create(null),
-			[Anemone.STATES.SPLIT]: Object.create(null)
-		});
-	nextState.turn += 1;
+	const moveSets = _.reduce(moves, (_moveSets, move, anemoneId) => {
+		if (_moveSets[move.action]) {
+			_moveSets[move.action][anemoneId] = move;
+		}
+		return _moveSets;
+	}, {
+		[Anemone.STATES.DEFEND]: Object.create(null),
+		[Anemone.STATES.ATTACK]: Object.create(null),
+		[Anemone.STATES.REGENERATE]: Object.create(null),
+		[Anemone.STATES.SPLIT]: Object.create(null)
+	});
+	state.turn += 1;
 
-	resolveDefense(nextState, moveSets);
-	resolveAttack(nextState, moveSets);
+	resolveDefense(state, moveSets);
+	resolveAttack(state, moveSets);
 	// The order of the resolution between split and regen is very important
 	// If we split after regen, it means that a regenerator will not be able to 'beat' a splitter as he'll be guranteed to take damage
 	// Whereas if we split after regen, it means the regenerator can heal any damage taken from the split
-	resolveSplit(nextState, moveSets);
-	resolveRegen(nextState, moveSets);
-	resolveDeath(nextState);
+	resolveSplit(state, moveSets);
+	resolveRegen(state, moveSets);
+	resolveDeath(state);
 
-	return nextState;
+	return state;
 }
