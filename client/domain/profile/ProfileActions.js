@@ -1,18 +1,9 @@
-export const SELECT_PLAYER_BOT = Symbol('SELECT_PLAYER_BOT');
-export function selectPlayerBot(player, bot) {
-	return {
-		type: SELECT_PLAYER_BOT,
-		player: player,
-		bot: bot
-	};
-}
+import _ from 'lodash';
+import Promise from 'bluebird';
 
-export const UPDATE_PLAYER_BOT_CODE = Symbol('UPDATE_PLAYER_BOT_CODE');
-export function updatePlayerBotCode(player, bot, code) {
-	return {
-		type: UPDATE_PLAYER_BOT_CODE,
-		player: player,
-		bot: bot,
-		code: code
+export const FETCH_PROFILE = Symbol('FETCH_PROFILE');
+export function fetchProfile(profileId) {
+	return async function(dispatch) {
+		dispatch(createProfile);
 	};
 }

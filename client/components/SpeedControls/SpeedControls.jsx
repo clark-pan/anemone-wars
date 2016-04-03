@@ -18,9 +18,9 @@ export default class SpeedControls extends Component {
 
 		let playOrPauseBtn;
 		if (this.props.isPlaying) {
-			playOrPauseBtn = <mui.IconButton onTouchTap={() => this.props.onPlayStateChange(false)} iconClassName="material-icons" style={btnStyle}>play_arrow</mui.IconButton>;
+			playOrPauseBtn = <mui.IconButton onTouchTap={() => this.props.onPlayStateChange(false)} iconClassName="material-icons icon-size-m" style={btnStyle}>play_arrow</mui.IconButton>;
 		} else {
-			playOrPauseBtn = <mui.IconButton onTouchTap={() => this.props.onPlayStateChange(true)} iconClassName="material-icons" style={btnStyle}>pause_arrow</mui.IconButton>;
+			playOrPauseBtn = <mui.IconButton onTouchTap={() => this.props.onPlayStateChange(true)} iconClassName="material-icons icon-size-m" style={btnStyle}>pause_arrow</mui.IconButton>;
 		}
 
 

@@ -30,6 +30,33 @@ export function updateGameState(gameState) {
 	};
 }
 
+export const SELECT_PLAYER_PROFILE = Symbol('SELECT_PLAYER_PROFILE');
+export function selectPlayerProfile(player, profileId) {
+	return {
+		type: SELECT_PLAYER_PROFILE,
+		playerNumber: player.playerNumber,
+		profileId: profileId
+	};
+}
+
+export const SPEED_MAP = {
+	'slow': 1000,
+	'fast': 500,
+	'faster': 100
+};
+export const UPDATE_GAME_PLAYBACK = Symbol('UPDATE_GAME_PLAYBACK');
+export function updateGamePlayback(running, speed) {
+	if (!(speed in SPEED_MAP)) {
+		throw new Error('invalid speed option');
+	}
+
+	return {
+		type: UPDATE_GAME_PLAYBACK,
+		running: !!running,
+		speed: speed
+	};
+}
+
 export function generateNextGameStateAsync(game) {
 	return async (dispatch) => {
 		if (game.gameState.turn === -1) {
@@ -48,25 +75,5 @@ export function generateNextGameStateAsync(game) {
 		let nextState = Engine.resolve(game.gameState, moves);
 		dispatch(updateGameState(nextState));
 		return nextState;
-	};
-}
-
-export const SPEED_MAP = {
-	'slow': 1000,
-	'fast': 500,
-	'faster': 100
-};
-
-
-export const UPDATE_GAME_PLAYBACK = Symbol('UPDATE_GAME_PLAYBACK');
-export function updateGamePlayback(running, speed) {
-	if (!(speed in SPEED_MAP)) {
-		throw new Error('invalid speed option');
-	}
-
-	return {
-		type: UPDATE_GAME_PLAYBACK,
-		running: !!running,
-		speed: speed
 	};
 }

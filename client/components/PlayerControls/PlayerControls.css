@@ -24,6 +24,7 @@
 	.player-controls--editor-pane-hidden {
 		opacity: 0;
 		transform: translateX(20px);
+		pointer-events: none;
 	}
 
 	.player-controls--editor-header {
@@ -33,6 +34,6 @@
 
 	.player-controls--editor-avatar {
 		position: absolute;
-		left: 16px;
-		top: 16px;
+		left: 8px;
+		top: 12px;
 	}

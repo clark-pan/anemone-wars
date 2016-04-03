@@ -13,9 +13,11 @@ function createDefaultState(width, height) {
 			return {
 				playerNumber: i,
 				code: testCode,
-				profile: { // TODO make this into an id
-					colour: '#dddddd'
-				}
+				profile: {
+					avatar: null,
+					colour: null
+				},
+				profileId: null
 			};
 		}),
 		gameState: Engine.createGame(width, height),

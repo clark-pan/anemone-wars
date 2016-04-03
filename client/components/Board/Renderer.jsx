@@ -1,5 +1,7 @@
 import { MAX_HEALTH } from '/shared/game/anemone';
 
+import PLAYER_COLOURS from '/client/constants/PlayerColours.js';
+
 const _drawTile = Symbol('drawTile'),
 	_drawHex = Symbol('drawHex'),
 	_playerCounter = Symbol('playerCounter'),
@@ -32,8 +34,14 @@ export default class Renderer {
 			centerX = x * (HEX_SIDE_SIZE * 0.5 + HEX_WIDTH_RADIUS) + HEX_WIDTH_RADIUS,
 			centerY = y * HEX_HEIGHT_RADIUS * 2 + HEX_HEIGHT_RADIUS * (x % 2 ? 2 : 1),
 			anemone = state.anemones[tile.occupantId],
-			playerNumber = anemone ? anemone.playerNumber : null,
-			colour = players[playerNumber] ? players[playerNumber].profile.colour : null;
+			playerNumber = anemone ? anemone.playerNumber : null;
+
+		let colour;
+		if (players[playerNumber]) {
+			colour = players[playerNumber].profile.color || PLAYER_COLOURS[playerNumber];
+		} else {
+			colour = null;
+		}
 
 		this[_drawHex](centerX, centerY, colour);
 		this.ctx.save();
