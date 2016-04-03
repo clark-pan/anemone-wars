@@ -6,14 +6,14 @@ import _ from 'lodash';
  *
  * @property {String} id - id of anemone
  * @property {int} health - Health of the anemone
- * @property {String} ownerId - id of the owner of this anemone
+ * @property {Number} playerNumber - the seat number this anemone belongs to
  * @property {Tuple.<int, int>} position - [x, y] position
  *
  * @example
  * {
  *     id : '123',
  *     health : 10,
- *     ownerId : 'playerId',
+ *     playerNumber : 0,
  *     position : [0, 0]
  * }
  */
@@ -33,11 +33,11 @@ export const MAX_HEALTH = 12,
 		ATTACK: 'attack'
 	};
 
-export function create(id, ownerId, position, health = MAX_HEALTH) {
+export function create(id, playerNumber, position, health = MAX_HEALTH) {
 	return {
 		id: id,
 		health: health,
-		ownerId: ownerId,
+		playerNumber: playerNumber,
 		position: position
 	};
 }

@@ -40,7 +40,7 @@ export function generateNextGameStateAsync(game) {
 			.all(
 				_.map(game.players, (player) => MoveService
 					.getPlayerMoveAsync(game.gameState, player, player.code)
-					.catch(() => {})
+					.catch(() => { return {}; }) // Todo, better error handling
 				)
 			)
 			.reduce((acc, moreMoves) => _.assign(acc, moreMoves));

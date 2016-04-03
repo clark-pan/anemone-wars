@@ -7,8 +7,8 @@ import { connect } from 'react-redux';
 import { updateGamePlayback, SPEED_MAP } from '/client/domain/game/GameActions.js';
 
 // Material UI
-import ThemeManager from 'material-ui/lib/styles/theme-manager';
-import LightTheme from 'material-ui/lib/styles/raw-themes/light-raw-theme.js';
+import getMuiTheme from 'material-ui/lib/styles/getMuiTheme';
+import LightTheme from 'material-ui/lib/styles/baseThemes/lightBaseTheme';
 
 // Views
 import BoardComponent from '/client/components/Board/Board';
@@ -28,7 +28,7 @@ class MainPage extends Component {
 
 	getChildContext() {
 		return {
-			muiTheme: ThemeManager.getMuiTheme(LightTheme)
+			muiTheme: getMuiTheme(LightTheme)
 		};
 	}
 

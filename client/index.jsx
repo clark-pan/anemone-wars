@@ -25,20 +25,20 @@ store.subscribe(() => {
 			timeoutId = null;
 			lastRunning = game.running;
 			lastSpeed = game.speed;
-			if (game.running) {
-				let tick = () => {
-					timeoutId = setTimeout(() => {
-						let { currentGame = game } = store.getState();
-						if (game.running) {
-							store.dispatch(generateNextGameStateAsync(currentGame)).then(() => {
-								tick();
-							});
-						}
-					}, SPEED_MAP[game.speed]);
-				};
+			let tick = () => {
+				let currentState = store.getState(), currentGame = currentState.game;
+				if (currentGame.running && !timeoutId) {
+					timeoutId = setTimeout(async () => {
+						await store.dispatch(generateNextGameStateAsync(currentGame));
+						timeoutId = null;
+						tick();
+					}, SPEED_MAP[currentGame.speed]);
+				} else {
+					timeoutId = null;
+				}
+			};
 
-				tick();
-			}
+			tick();
 		}
 	}
 });

@@ -49,7 +49,7 @@ export function createGame(width, height) {
 	};
 }
 
-export function startGame(state, ownerIds) {
+export function startGame(state, numPlayers) {
 	if (state.turn !== -1) {
 		throw new Error('Game has already started');
 	}
@@ -58,10 +58,10 @@ export function startGame(state, ownerIds) {
 		.shuffle()
 		.value();
 
-	_.each(ownerIds, (ownerId) => {
+	_.times(numPlayers, (i) => {
 		const anemoneId = state._lastAnemoneCounter++;
 		let tile = tiles.pop(), position = [tile.x, tile.y];
-		state.anemones[anemoneId] = Anemone.create(anemoneId, ownerId, position);
+		state.anemones[anemoneId] = Anemone.create(anemoneId, i, position);
 		tile.occupantId = anemoneId;
 	});
 	state.turn = 0;
@@ -69,9 +69,9 @@ export function startGame(state, ownerIds) {
 	return state;
 }
 
-export function getRandomInitialState(width, height, ownerIds) {
+export function getRandomInitialState(width, height, numPlayers) {
 	const state = createGame(width, height);
-	startGame(state, ownerIds);
+	startGame(state, numPlayers);
 	return state;
 }
 
@@ -162,23 +162,23 @@ function resolveSplit(state, moveSets) {
 
 	for (const positionKey in unresolvedTiles) {
 		const anemones = unresolvedTiles[positionKey],
-			groupedByPlayer = _.groupBy(anemones, 'ownerId'),
+			groupedByPlayer = _.groupBy(anemones, 'playerNumber'),
 			[x, y] = positionKey.split(':').map(parseInt10),
 			tile = state.board[x][y],
 			currentOccupant = state.anemones[tile.occupantId];
-		let currentOwnerId,
+		let currentplayerNumber,
 			largestAnemoneGroup, nextLargestHealth;
 
 		if (currentOccupant) {
-			if (!groupedByPlayer[currentOccupant.ownerId]) {
-				groupedByPlayer[currentOccupant.ownerId] = [];
+			if (!groupedByPlayer[currentOccupant.playerNumber]) {
+				groupedByPlayer[currentOccupant.playerNumber] = [];
 			}
-			groupedByPlayer[currentOccupant.ownerId].push(currentOccupant);
-			currentOwnerId = currentOccupant.ownerId;
+			groupedByPlayer[currentOccupant.playerNumber].push(currentOccupant);
+			currentplayerNumber = currentOccupant.playerNumber;
 		}
 
-		for (const ownerId in groupedByPlayer) {
-			const playerAnemones = groupedByPlayer[ownerId],
+		for (const playerNumber in groupedByPlayer) {
+			const playerAnemones = groupedByPlayer[playerNumber],
 				// 2. calculating health of a group
 				health = _.chain(playerAnemones)
 				.sortBy('health')
@@ -190,7 +190,7 @@ function resolveSplit(state, moveSets) {
 				nextLargestHealth = largestAnemoneGroup ? largestAnemoneGroup.health : 0;
 				largestAnemoneGroup = {
 					health: health,
-					ownerId: ownerId,
+					playerNumber: playerNumber,
 					anemones: playerAnemones
 				};
 			} else if (largestAnemoneGroup && largestAnemoneGroup.health === health) {
@@ -204,7 +204,7 @@ function resolveSplit(state, moveSets) {
 			const finalHealth = largestAnemoneGroup.health - nextLargestHealth;
 
 			// If the winning group is the same as the current occupant, then just update that occupant's health
-			if (largestAnemoneGroup.ownerId === currentOwnerId) {
+			if (largestAnemoneGroup.playerNumber === currentplayerNumber) {
 				Anemone.setHealth(state.anemones[currentOccupant.id], finalHealth);
 			} else {
 				const winningAnemone = largestAnemoneGroup.anemones[0];

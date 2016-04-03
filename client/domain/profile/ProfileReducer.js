@@ -34,19 +34,7 @@ const DEFAULT_COLOURS = [
 export default function playerReducer(state = initialState, action) {
 	switch (action.type) {
 		case SELECT_PLAYER_BOT:
-			return _.map(state, (player) => {
-				let selectedBot;
-				if (player.id === action.playerId) return player;
-
-				selectedBot = _.find(player.defaultBots, (bot) => bot.id === action.botId) || _.find(player.userBots, (bot) => bot.id === action.botId);
-
-				if (!selectedBot) return player;
-
-				return {
-					...player,
-					selectedBotId: action.botId
-				};
-			});
+			return state;
 		default:
 			return state;
 	}

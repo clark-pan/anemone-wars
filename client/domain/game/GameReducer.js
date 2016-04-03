@@ -11,9 +11,9 @@ function createDefaultState(width, height) {
 	return {
 		players: _.times(6, (i) => {
 			return {
-				id: i,
+				playerNumber: i,
 				code: testCode,
-				profile: {
+				profile: { // TODO make this into an id
 					colour: '#dddddd'
 				}
 			};
@@ -34,7 +34,7 @@ export default function gameReducer(state = null, action) {
 		case START_GAME:
 			return {
 				...state,
-				gameState: Engine.startGame(state.gameState, _.map(action.players, 'id'))
+				gameState: Engine.startGame(state.gameState, action.players.length)
 			};
 		case UPDATE_GAME_STATE:
 			return {

@@ -3,7 +3,7 @@ var cache = {};
 function getPlayerAnemones(state, player) {
 	var anemones = {}, id;
 	for (id in state.anemones) {
-		if (state.anemones[id].ownerId === player.id) {
+		if (state.anemones[id].playerNumber === player.playerNumber) {
 			anemones[id] = state.anemones[id];
 		}
 	}
