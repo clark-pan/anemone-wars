@@ -38,6 +38,7 @@ System.config({
     "codemirror": "npm:codemirror@5.12.0",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
+    "fetch-polyfill": "npm:whatwg-fetch@0.11.0",
     "lodash": "npm:lodash@4.6.1",
     "material-ui": "npm:material-ui@0.15.0-alpha.2",
     "react": "npm:react@0.14.7",
@@ -54,9 +55,6 @@ System.config({
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.6.0"
     },
-    "github:jspm/nodelibs-domain@0.1.0": {
-      "domain-browser": "npm:domain-browser@1.1.7"
-    },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
     },
@@ -71,10 +69,6 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
-    },
-    "npm:asap@2.0.3": {
-      "domain": "github:jspm/nodelibs-domain@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
@@ -105,15 +99,6 @@ System.config({
     },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
-    },
-    "npm:domain-browser@1.1.7": {
-      "events": "github:jspm/nodelibs-events@0.1.1"
-    },
-    "npm:fbjs@0.2.1": {
-      "core-js": "npm:core-js@1.2.6",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "promise": "npm:promise@7.1.1",
-      "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
     },
     "npm:fbjs@0.6.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -193,10 +178,6 @@ System.config({
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
-    "npm:promise@7.1.1": {
-      "asap": "npm:asap@2.0.3",
-      "fs": "github:jspm/nodelibs-fs@0.1.2"
-    },
     "npm:query-string@3.0.3": {
       "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
     },
@@ -239,7 +220,7 @@ System.config({
       "warning": "npm:warning@2.1.0"
     },
     "npm:react-tap-event-plugin@0.2.2": {
-      "fbjs": "npm:fbjs@0.2.1",
+      "fbjs": "npm:fbjs@0.6.1",
       "react": "npm:react@0.14.7"
     },
     "npm:react@0.14.7": {
@@ -251,7 +232,7 @@ System.config({
       "core-util-is": "npm:core-util-is@1.0.2",
       "events": "github:jspm/nodelibs-events@0.1.1",
       "inherits": "npm:inherits@2.0.1",
-      "isarray": "npm:isarray@0.0.1",
+      "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
