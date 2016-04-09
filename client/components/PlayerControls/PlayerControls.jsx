@@ -14,21 +14,50 @@ import PLAYER_COLOURS from '/client/constants/PlayerColours.js';
 
 import './PlayerControls.css!';
 
-const _renderControls = Symbol('renderControls');
+const _renderControls = Symbol('renderControls'),
+	_selectedPlayer = Symbol('selectedPlayer'),
+	_onPlayerSelect = Symbol('onPlayerSelect'),
+	_onBotSelect = Symbol('onBotSelect'),
+	_onProfileFieldKeyDown = Symbol('onProfileFieldKeyDown'),
+	_onProfileFieldEnterKey = Symbol('onProfileFieldEnterKey');
 
 export default class PlayerControls extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			selectedPlayerNumber: null
+			selectedPlayerNumber: null,
+			avatarControlsViewState: null
 		};
 	}
 
-	onPlayerSelect(player) {
+	get [_selectedPlayer]() {
+		return this.props.players[this.state.selectedPlayerNumber];
+	}
+
+	[_onPlayerSelect](player) {
 		this.setState({
-			selectedPlayerNumber: this.state.selectedPlayerNumber === player.playerNumber ? null : player.playerNumber
+			selectedPlayerNumber: this.state.selectedPlayerNumber === player.playerNumber ? null : player.playerNumber,
+			avatarControlsViewState: null
 		});
+	}
+
+	[_onBotSelect](event, index, botPath) {
+		this.props.onPlayerBotUpdate(this[_selectedPlayer], botPath);
+	}
+
+	[_onProfileFieldKeyDown](event) {
+		switch (event.which) {
+			case 13: // Enter
+				this[_onProfileFieldEnterKey](event);
+				break;
+			default: // Deliberately empty
+		}
+	}
+
+	[_onProfileFieldEnterKey](event) {
+		event.preventDefault();
+		this.props.onPlayerProfileUpdate(this[_selectedPlayer], event.target.value);
 	}
 
 	[_renderControls](selectedPlayer) {
@@ -47,7 +76,7 @@ export default class PlayerControls extends React.Component {
 					<Avatar icon={<FontIcon className="material-icons">face</FontIcon>} color="white" backgroundColor={colour} size={miniSize} />;
 
 			return (
-				<FloatingActionButton backgroundColor="transparent" style={style} key={key} mini={true} onClick={this.onPlayerSelect.bind(this, player)}>
+				<FloatingActionButton backgroundColor="transparent" style={style} key={key} mini={true} onClick={this[_onPlayerSelect].bind(this, player)}>
 					{avatar}
 				</FloatingActionButton>
 			);
@@ -55,16 +84,13 @@ export default class PlayerControls extends React.Component {
 	}
 
 	render() {
-		let controls, pane, menuItems, editorOptions, paneClassName, paneAvatarIconElement,
-			selectedPlayer = this.state.selectedPlayerNumber != null ? this.props.players[this.state.selectedPlayerNumber] : null;
+		let controls, pane, editorOptions, paneClassName, paneAvatarIconElement,
+			selectedPlayer = this.state.selectedPlayerNumber != null ? this.props.players[this.state.selectedPlayerNumber] : null,
+			selectedProfile = selectedPlayer ? this.props.profiles[selectedPlayer.profileId] : null,
+			selectedPlayerCode = selectedPlayer ? selectedPlayer.code : '',
+			avatarControlsComponent, avatarControlsViewState;
 
 		controls = this[_renderControls](selectedPlayer);
-
-		menuItems = [
-			{ payload: '/shared/bots/empty.js', text: 'Empty'},
-			{ payload: '/shared/bots/beginner.js', text: 'Beginner'},
-			{ payload: 'custombot', text: 'Custom bot'}
-		];
 
 		editorOptions = {
 			lineNumbers: true
@@ -97,6 +123,37 @@ export default class PlayerControls extends React.Component {
 					{playerAvatar}
 				</Badge>
 			);
+
+			avatarControlsViewState = this.state.avatarControlsViewState;
+			if (!avatarControlsViewState) {
+				avatarControlsViewState = selectedProfile ? 'select-bot' : 'select-profile';
+			}
+
+			if (selectedPlayer && selectedProfile && avatarControlsViewState === 'select-bot') {
+				avatarControlsComponent = (
+					<SelectField
+						fullWidth={true}
+						floatingLabelText="Select bot"
+						style={{ overflow: 'hidden' }}
+						value={selectedPlayer.botPath}
+						onChange={this[_onBotSelect].bind(this)}
+					>
+						{
+							_.map(selectedProfile.bots, (bot) => <MenuItem key={bot.name} value={bot.path} primaryText={bot.name} />)
+						}
+					</SelectField>
+				);
+			} else {
+				avatarControlsComponent = (
+					<TextField
+						fullWidth={true}
+						floatingLabelText="Github account"
+						hintText="Press enter to search"
+						value={selectedPlayer.profileId}
+						onKeyDown={this[_onProfileFieldKeyDown].bind(this)}
+					/>
+				);
+			}
 		} else {
 			paneClassName = 'player-controls--editor-pane player-controls--editor-pane-hidden';
 			paneAvatarIconElement = (<div />);
@@ -111,19 +168,16 @@ export default class PlayerControls extends React.Component {
 							style={{ position: 'absolute'}}
 							anchorOrigin={{ 'vertical': 'bottom', 'horizontal': 'left' }}
 							iconButtonElement={paneAvatarIconElement}
+							value={avatarControlsViewState}
+							onChange={(event, value) => { this.setState({ avatarControlsViewState: value }); }}
 						>
-							<MenuItem primaryText="Change Profile" />
-							<MenuItem primaryText="Change Bot" />
+							<MenuItem primaryText="Change Profile" value="select-profile" />
+							<MenuItem primaryText="Change Bot" value="select-bot" />
 						</IconMenu>
-						<TextField
-							fullWidth={true}
-							floatingLabelText="Github account"
-							hintText="Press enter to search"
-							onEnterKeyDown={(e) => { this.props.onPlayerProfileUpdate(selectedPlayer, e.target.value); }}
-						/>
+						{avatarControlsComponent}
 					</div>
 					<CardMedia>
-						<CodeMirror options={editorOptions} />
+						<CodeMirror options={editorOptions} value={selectedPlayerCode} />
 					</CardMedia>
 					<CardActions>
 						<FlatButton label="Close" onClick={() => this.setState({selectedPlayerNumber: null})} />
@@ -146,10 +200,13 @@ export default class PlayerControls extends React.Component {
 PlayerControls.displayName = 'PlayerControls';
 PlayerControls.propTypes = {
 	players: React.PropTypes.array.isRequired,
-	onPlayerProfileUpdate: React.PropTypes.func
+	profiles: React.PropTypes.object.isRequired,
+	onPlayerProfileUpdate: React.PropTypes.func,
+	onPlayerBotUpdate: React.PropTypes.func
 };
 PlayerControls.defaultProps = {
-	onPlayerProfileUpdate: _.noop
+	onPlayerProfileUpdate: _.noop,
+	onPlayerBotUpdate: _.noop
 };
 PlayerControls.contextTypes = {
 	muiTheme: React.PropTypes.object

@@ -4,7 +4,7 @@ import React from 'react';
 const { PropTypes, Component } = React;
 
 import { connect } from 'react-redux';
-import { updateGamePlayback, SPEED_MAP, selectPlayerProfile } from '/client/domain/game/GameActions.js';
+import { updateGamePlayback, SPEED_MAP, selectPlayerProfile, selectPlayerBot, fetchPlayerBotCode } from '/client/domain/game/GameActions.js';
 import { fetchProfile } from '/client/domain/profile/ProfileActions.js';
 
 // Material UI
@@ -47,6 +47,11 @@ class MainPage extends Component {
 		this.props.selectPlayerProfile(player, value);
 	}
 
+	onPlayerBotUpdate(player, botPath) {
+		this.props.selectPlayerBot(player, botPath);
+		this.props.fetchPlayerBotCode(player, botPath);
+	}
+
 	render() {
 		return (
 			<div>
@@ -61,7 +66,9 @@ class MainPage extends Component {
 					/>
 					<PlayerControls
 						players={this.props.game.players}
+						profiles={this.props.profiles}
 						onPlayerProfileUpdate={this.onPlayerProfileUpdate.bind(this)}
+						onPlayerBotUpdate={this.onPlayerBotUpdate.bind(this)}
 					/>
 				</div>
 			</div>
@@ -80,14 +87,18 @@ MainPage.propTypes = {
 		running: PropTypes.bool,
 		speed: PropTypes.oneOf(_.keys(SPEED_MAP))
 	}).isRequired,
+	profiles: PropTypes.object.isRequired,
 	updateGamePlayback: PropTypes.func.isRequired,
 	selectPlayerProfile: PropTypes.func.isRequired,
-	fetchProfile: PropTypes.func.isRequired
+	selectPlayerBot: PropTypes.func.isRequired,
+	fetchProfile: PropTypes.func.isRequired,
+	fetchPlayerBotCode: PropTypes.func.isRequired
 };
 
 export default connect((state) => {
 	return {
-		game: state.game
+		game: state.game,
+		profiles: state.profiles
 	};
 }, (dispatch) => {
 	return {
@@ -97,8 +108,14 @@ export default connect((state) => {
 		selectPlayerProfile: (player, profileId) => {
 			dispatch(selectPlayerProfile(player, profileId));
 		},
+		selectPlayerBot: (player, botPath) => {
+			dispatch(selectPlayerBot(player, botPath));
+		},
 		fetchProfile: (profileId) => {
 			dispatch(fetchProfile(profileId));
+		},
+		fetchPlayerBotCode: (player, botPath) => {
+			dispatch(fetchPlayerBotCode(player, botPath));
 		}
 	};
 })(MainPage);

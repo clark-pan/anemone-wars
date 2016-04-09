@@ -1,15 +1,24 @@
-import _ from 'lodash';
-
 const { atob, fetch } = self;
 
 export class GithubService {
 	async getUserProfileAsync(username) {
-		let res;
-
-		res = await fetch(`https://api.github.com/repos/${username}/anemone-bot/contents/anemone.json`);
+		let res = await fetch(`https://api.github.com/repos/${username}/anemone-bot/contents/anemone.json`);
 		if (res.status === 200) {
 			let json = await res.json();
-			return JSON.parse(atob(json.content));
+			let profile = JSON.parse(atob(json.content));
+			profile.id = username;
+			return profile;
+		}
+
+		throw new Error('something went wrong');
+	}
+
+	async getUserProfileBotCode(username, botPath) {
+		let res = await fetch(`https://api.github.com/repos/${username}/anemone-bot/contents/${botPath}`);
+		if (res.status === 200) {
+			let json = await res.json();
+			let code = atob(json.content);
+			return code;
 		}
 
 		throw new Error('something went wrong');

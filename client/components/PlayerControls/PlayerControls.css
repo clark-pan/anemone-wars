@@ -30,6 +30,8 @@
 	.player-controls--editor-header {
 		padding: 0px 16px 4px 72px;
 		position: relative;
+		min-height: 80px;
+		overflow: hidden;
 	}
 
 	.player-controls--editor-avatar {

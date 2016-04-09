@@ -3,6 +3,7 @@ import Promise from 'bluebird';
 
 import * as Engine from '/shared/game/engine.js';
 import MoveService from '/client/services/MoveService.js';
+import GithubService from '/client/services/GithubService.js';
 
 export const NEW_GAME = Symbol('NEW_GAME');
 export function addGame() {
@@ -36,6 +37,32 @@ export function selectPlayerProfile(player, profileId) {
 		type: SELECT_PLAYER_PROFILE,
 		playerNumber: player.playerNumber,
 		profileId: profileId
+	};
+}
+
+export const SELECT_PLAYER_BOT = Symbol('SELECT_PLAYER_BOT');
+export function selectPlayerBot(player, botPath) {
+	return {
+		type: SELECT_PLAYER_BOT,
+		playerNumber: player.playerNumber,
+		botPath: botPath
+	};
+}
+
+export const SELECT_PLAYER_CODE = Symbol('SELECT_PLAYER_CODE');
+export function selectPlayerCode(player, code) {
+	return {
+		type: SELECT_PLAYER_CODE,
+		playerNumber: player.playerNumber,
+		code: code
+	};
+}
+
+export const FETCH_PLAYER_BOT_CODE = Symbol('FETCH_PLAYER_BOT_CODE');
+export function fetchPlayerBotCode(player, botPath) {
+	return async (dispatch) => {
+		let code = await GithubService.getUserProfileBotCode(player.profileId, botPath);
+		dispatch(selectPlayerCode(player, code));
 	};
 }
 
