@@ -33,8 +33,8 @@ export default class Board extends React.Component {
 	}
 
 	shouldComponentUpdate(nextProps) {
-		return true;
-		return nextProps.game !== this.props.game || nextProps.game.gameState !== this.props.game.gameState;
+		if (!nextProps.game) return false;
+		return nextProps.game.gameState !== this.props.game.gameState || this[_lastRenderedTurn] !== this.props.game.gameState.turn;
 	}
 
 	componentDidUpdate() {
@@ -42,7 +42,7 @@ export default class Board extends React.Component {
 	}
 
 	[_draw]() {
-		this[_lastRenderedTurn] = this.props.game.turn;
+		this[_lastRenderedTurn] = this.props.game.gameState.turn;
 		this.renderer.draw(this.props.game, this.props.profiles);
 	}
 

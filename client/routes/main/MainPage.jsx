@@ -4,7 +4,7 @@ import React from 'react';
 const { PropTypes, Component } = React;
 
 import { connect } from 'react-redux';
-import { updateGamePlayback, SPEED_MAP, selectPlayerProfile, selectPlayerBot, fetchPlayerBotCode } from '/client/domain/game/GameActions.js';
+import { updateGamePlayback, SPEED_MAP, selectPlayerProfile, selectPlayerBot, selectPlayerCode, fetchPlayerBotCode } from '/client/domain/game/GameActions.js';
 import { fetchProfile } from '/client/domain/profile/ProfileActions.js';
 
 // Material UI
@@ -55,6 +55,10 @@ class MainPage extends Component {
 		this.props.fetchPlayerBotCode(player, botPath);
 	}
 
+	onPlayerCodeUpdate(player, code) {
+		this.props.selectPlayerCode(player, code);
+	}
+
 	render() {
 		return (
 			<div>
@@ -73,6 +77,7 @@ class MainPage extends Component {
 						onRequestUpdateProfile={this.onRequestUpdateProfile.bind(this)}
 						onPlayerProfileIdChange={this.onPlayerProfileIdChange.bind(this)}
 						onPlayerBotUpdate={this.onPlayerBotUpdate.bind(this)}
+						onPlayerCodeUpdate={this.onPlayerCodeUpdate.bind(this)}
 					/>
 				</div>
 			</div>
@@ -114,6 +119,9 @@ export default connect((state) => {
 		},
 		selectPlayerBot: (player, botPath) => {
 			dispatch(selectPlayerBot(player, botPath));
+		},
+		selectPlayerCode: (player, code) => {
+			dispatch(selectPlayerCode(player, code));
 		},
 		fetchProfile: (profileId) => {
 			dispatch(fetchProfile(profileId));

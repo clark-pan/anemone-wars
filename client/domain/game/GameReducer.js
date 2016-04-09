@@ -10,10 +10,6 @@ function createDefaultState(width, height) {
 			return {
 				playerNumber: i,
 				code: '',
-				profile: {
-					avatar: null,
-					colour: null
-				},
 				profileId: null,
 				botPath: null
 			};

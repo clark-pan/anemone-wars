@@ -21,6 +21,7 @@ const _renderControls = Symbol('renderControls'),
 	_selectedPlayer = Symbol('selectedPlayer'),
 	_onPlayerSelect = Symbol('onPlayerSelect'),
 	_onBotSelect = Symbol('onBotSelect'),
+	_onCodeUpdate = Symbol('onCodeUpdate'),
 	_onProfileFieldChange = Symbol('onProfileFieldChange'),
 	_onProfileFieldKeyDown = Symbol('onProfileFieldKeyDown'),
 	_onProfileFieldEnterKey = Symbol('onProfileFieldEnterKey');
@@ -47,7 +48,15 @@ export default class PlayerControls extends React.Component {
 	}
 
 	[_onBotSelect](event, index, botPath) {
-		this.props.onPlayerBotUpdate(this[_selectedPlayer], botPath);
+		if (this[_selectedPlayer]) {
+			this.props.onPlayerBotUpdate(this[_selectedPlayer], botPath);
+		}
+	}
+
+	[_onCodeUpdate](code) {
+		if (this[_selectedPlayer]) {
+			this.props.onPlayerCodeUpdate(this[_selectedPlayer], code);
+		}
 	}
 
 	[_onProfileFieldKeyDown](event) {
@@ -59,8 +68,10 @@ export default class PlayerControls extends React.Component {
 		}
 	}
 
-	[_onProfileFieldChange](event) {
-		this.props.onPlayerProfileIdChange(this[_selectedPlayer], event.target.value);
+	[_onProfileFieldChange](event, value) {
+		if (this[_selectedPlayer]) {
+			this.props.onPlayerProfileIdChange(this[_selectedPlayer], value);
+		}
 	}
 
 	[_onProfileFieldEnterKey](event) {
@@ -190,6 +201,7 @@ export default class PlayerControls extends React.Component {
 								lineNumbers: true,
 								mode: 'javascript'
 							}}
+							onChange={this[_onCodeUpdate].bind(this)}
 							value={selectedPlayerCode}
 						/>
 					</CardMedia>
@@ -217,12 +229,14 @@ PlayerControls.propTypes = {
 	profiles: React.PropTypes.object.isRequired,
 	onRequestUpdateProfile: React.PropTypes.func,
 	onPlayerProfileIdChange: React.PropTypes.func,
-	onPlayerBotUpdate: React.PropTypes.func
+	onPlayerBotUpdate: React.PropTypes.func,
+	onPlayerCodeUpdate: React.PropTypes.func
 };
 PlayerControls.defaultProps = {
 	onRequestUpdateProfile: _.noop,
 	onPlayerProfileIdChange: _.noop,
-	onPlayerBotUpdate: _.noop
+	onPlayerBotUpdate: _.noop,
+	onPlayerCodeUpdate: _.noop
 };
 PlayerControls.contextTypes = {
 	muiTheme: React.PropTypes.object
