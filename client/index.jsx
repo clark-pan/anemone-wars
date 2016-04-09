@@ -4,7 +4,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import 'codemirror/lib/codemirror.css!';
 import './index.css!';
 
 import store from '/client/domain/store.js';

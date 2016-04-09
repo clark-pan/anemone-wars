@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 import React from 'react/addons';
+import tinycolor from 'tinycolor';
 
 import {
 	Card, CardMedia, CardActions,
@@ -10,14 +11,17 @@ import {
 } from 'material-ui';
 
 import CodeMirror from 'JedWatson/react-codemirror';
+import 'codemirror/mode/javascript/javascript.js';
 import PLAYER_COLOURS from '/client/constants/PlayerColours.js';
 
 import './PlayerControls.css!';
+import 'codemirror/lib/codemirror.css!';
 
 const _renderControls = Symbol('renderControls'),
 	_selectedPlayer = Symbol('selectedPlayer'),
 	_onPlayerSelect = Symbol('onPlayerSelect'),
 	_onBotSelect = Symbol('onBotSelect'),
+	_onProfileFieldChange = Symbol('onProfileFieldChange'),
 	_onProfileFieldKeyDown = Symbol('onProfileFieldKeyDown'),
 	_onProfileFieldEnterKey = Symbol('onProfileFieldEnterKey');
 
@@ -55,28 +59,34 @@ export default class PlayerControls extends React.Component {
 		}
 	}
 
+	[_onProfileFieldChange](event) {
+		this.props.onPlayerProfileIdChange(this[_selectedPlayer], event.target.value);
+	}
+
 	[_onProfileFieldEnterKey](event) {
 		event.preventDefault();
-		this.props.onPlayerProfileUpdate(this[_selectedPlayer], event.target.value);
+		this.props.onRequestUpdateProfile(event.target.value);
 	}
 
 	[_renderControls](selectedPlayer) {
 		return _.map(this.props.players, (player, key) => {
 			let isActive = player === selectedPlayer,
-				colour = player.profile.colour || PLAYER_COLOURS[key],
+				playerProfile = this.props.profiles[player.profileId],
+				colour = playerProfile && playerProfile.colour || PLAYER_COLOURS[key],
+				{ miniSize } = this.context.muiTheme.floatingActionButton,
+				avatar = playerProfile && playerProfile.avatar ?
+					<Avatar src={playerProfile.avatar} size={miniSize} style={{display: 'block'}} /> :
+					<Avatar icon={<FontIcon className="material-icons">face</FontIcon>} color={tinycolor(colour).isLight ? 'black' : 'white'} backgroundColor="transparent" size={miniSize} />,
 				style = {
 					display: 'block',
 					marginBottom: '6px',
 					transition: 'transform 200ms ease-out',
+					border: `solid 3px ${colour}`,
 					transform: isActive ? 'translateX(-20px)' : 'translateX(0px)'
-				},
-				{ miniSize } = this.context.muiTheme.floatingActionButton,
-				avatar = player.profile.avatar ?
-					<Avatar style={{border: `solid 3px ${colour}`}} src={player.profile.avatar} size={miniSize} /> :
-					<Avatar icon={<FontIcon className="material-icons">face</FontIcon>} color="white" backgroundColor={colour} size={miniSize} />;
+				};
 
 			return (
-				<FloatingActionButton backgroundColor="transparent" style={style} key={key} mini={true} onClick={this[_onPlayerSelect].bind(this, player)}>
+				<FloatingActionButton backgroundColor={colour} style={style} key={key} mini={true} onClick={this[_onPlayerSelect].bind(this, player)}>
 					{avatar}
 				</FloatingActionButton>
 			);
@@ -84,7 +94,7 @@ export default class PlayerControls extends React.Component {
 	}
 
 	render() {
-		let controls, pane, editorOptions, paneClassName, paneAvatarIconElement,
+		let controls, pane, paneClassName, paneAvatarIconElement,
 			selectedPlayer = this.state.selectedPlayerNumber != null ? this.props.players[this.state.selectedPlayerNumber] : null,
 			selectedProfile = selectedPlayer ? this.props.profiles[selectedPlayer.profileId] : null,
 			selectedPlayerCode = selectedPlayer ? selectedPlayer.code : '',
@@ -92,23 +102,20 @@ export default class PlayerControls extends React.Component {
 
 		controls = this[_renderControls](selectedPlayer);
 
-		editorOptions = {
-			lineNumbers: true
-		};
-
 		// Using class name transition here instead of css transition group as the code editor inside the pane
 		// Causes really bad initial jankiness when animating in
 		if (selectedPlayer) {
-			let selectedPlayerColour = selectedPlayer.profile.colour || PLAYER_COLOURS[this.state.selectedPlayerNumber],
-				playerAvatar = selectedPlayer.profile.avatar ?
+			let selectedPlayerColour = selectedProfile && selectedProfile.colour || PLAYER_COLOURS[this.state.selectedPlayerNumber],
+				playerAvatar = selectedProfile && selectedProfile.avatar ?
 					<Avatar
-						style={{ border: `solid 3px ${selectedPlayerColour}`}}
-						src={selectedPlayer.profile.avatar}
-						size={56}
+						style={{ border: `solid 3px ${selectedPlayerColour}`, display: 'block'}}
+						src={selectedProfile.avatar}
+						size={58}
 					/> :
 					<Avatar
+						style={{ border: `solid 3px ${selectedPlayerColour}`}}
 						icon={<FontIcon className="material-icons">face</FontIcon>}
-						color="white"
+						color={tinycolor(selectedPlayerColour).isLight ? 'black' : 'white'}
 						backgroundColor={selectedPlayerColour}
 						size={56}
 					/>;
@@ -147,9 +154,10 @@ export default class PlayerControls extends React.Component {
 				avatarControlsComponent = (
 					<TextField
 						fullWidth={true}
-						floatingLabelText="Github account"
+						floatingLabelText="Select github account"
 						hintText="Press enter to search"
 						value={selectedPlayer.profileId}
+						onChange={this[_onProfileFieldChange].bind(this)}
 						onKeyDown={this[_onProfileFieldKeyDown].bind(this)}
 					/>
 				);
@@ -172,12 +180,18 @@ export default class PlayerControls extends React.Component {
 							onChange={(event, value) => { this.setState({ avatarControlsViewState: value }); }}
 						>
 							<MenuItem primaryText="Change Profile" value="select-profile" />
-							<MenuItem primaryText="Change Bot" value="select-bot" />
+							<MenuItem primaryText="Change Bot" value="select-bot" disabled={!selectedProfile} />
 						</IconMenu>
 						{avatarControlsComponent}
 					</div>
 					<CardMedia>
-						<CodeMirror options={editorOptions} value={selectedPlayerCode} />
+						<CodeMirror
+							options={{
+								lineNumbers: true,
+								mode: 'javascript'
+							}}
+							value={selectedPlayerCode}
+						/>
 					</CardMedia>
 					<CardActions>
 						<FlatButton label="Close" onClick={() => this.setState({selectedPlayerNumber: null})} />
@@ -201,11 +215,13 @@ PlayerControls.displayName = 'PlayerControls';
 PlayerControls.propTypes = {
 	players: React.PropTypes.array.isRequired,
 	profiles: React.PropTypes.object.isRequired,
-	onPlayerProfileUpdate: React.PropTypes.func,
+	onRequestUpdateProfile: React.PropTypes.func,
+	onPlayerProfileIdChange: React.PropTypes.func,
 	onPlayerBotUpdate: React.PropTypes.func
 };
 PlayerControls.defaultProps = {
-	onPlayerProfileUpdate: _.noop,
+	onRequestUpdateProfile: _.noop,
+	onPlayerProfileIdChange: _.noop,
 	onPlayerBotUpdate: _.noop
 };
 PlayerControls.contextTypes = {

@@ -10,7 +10,7 @@
 
 	.player-controls--editor-pane {
 		position: absolute;
-		width: 400px;
+		width: 500px;
 		right: 90px;
 		top: 0px;
 		
@@ -28,7 +28,7 @@
 	}
 
 	.player-controls--editor-header {
-		padding: 0px 16px 4px 72px;
+		padding: 0px 16px 4px 80px;
 		position: relative;
 		min-height: 80px;
 		overflow: hidden;
@@ -36,6 +36,6 @@
 
 	.player-controls--editor-avatar {
 		position: absolute;
-		left: 8px;
+		left: 10px;
 		top: 12px;
 	}

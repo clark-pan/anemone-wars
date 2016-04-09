@@ -19,17 +19,17 @@ export default class Renderer {
 		this[_playerCounter] = 0;
 	}
 
-	draw(game = {}) {
+	draw(game, profiles) {
 		const state = game.gameState;
 		this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
 		for (let x = 0; x < state.board.length; x++) {
 			for (let y = 0; y < state.board[x].length; y++) {
-				this[_drawTile](state.board[x][y], state, game.players);
+				this[_drawTile](state.board[x][y], state, game.players, profiles);
 			}
 		}
 	}
 
-	[_drawTile](tile, state, players) {
+	[_drawTile](tile, state, players, profiles) {
 		const x = tile.x, y = tile.y,
 			centerX = x * (HEX_SIDE_SIZE * 0.5 + HEX_WIDTH_RADIUS) + HEX_WIDTH_RADIUS,
 			centerY = y * HEX_HEIGHT_RADIUS * 2 + HEX_HEIGHT_RADIUS * (x % 2 ? 2 : 1),
@@ -38,7 +38,8 @@ export default class Renderer {
 
 		let colour;
 		if (players[playerNumber]) {
-			colour = players[playerNumber].profile.color || PLAYER_COLOURS[playerNumber];
+			let playerProfile = profiles[players[playerNumber].profileId];
+			colour = playerProfile && playerProfile.colour || PLAYER_COLOURS[playerNumber];
 		} else {
 			colour = null;
 		}

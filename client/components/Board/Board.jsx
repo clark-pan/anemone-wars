@@ -43,7 +43,7 @@ export default class Board extends React.Component {
 
 	[_draw]() {
 		this[_lastRenderedTurn] = this.props.game.turn;
-		this.renderer.draw(this.props.game);
+		this.renderer.draw(this.props.game, this.props.profiles);
 	}
 
 	render() {
@@ -55,7 +55,8 @@ export default class Board extends React.Component {
 
 Board.displayName = 'Board';
 Board.propTypes = {
-	game: React.PropTypes.object.isRequired
+	game: React.PropTypes.object.isRequired,
+	profiles: React.PropTypes.object.isRequired
 };
 Board.styles = {
 	position: 'absolute',

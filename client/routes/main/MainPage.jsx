@@ -42,9 +42,12 @@ class MainPage extends Component {
 		this.props.updateGamePlayback(running, this.props.game.speed);
 	}
 
-	onPlayerProfileUpdate(player, value) {
-		this.props.fetchProfile(value);
-		this.props.selectPlayerProfile(player, value);
+	onRequestUpdateProfile(profileId) {
+		this.props.fetchProfile(profileId);
+	}
+
+	onPlayerProfileIdChange(player, profileId) {
+		this.props.selectPlayerProfile(player, profileId);
 	}
 
 	onPlayerBotUpdate(player, botPath) {
@@ -55,7 +58,7 @@ class MainPage extends Component {
 	render() {
 		return (
 			<div>
-				<BoardComponent game={this.props.game} />
+				<BoardComponent game={this.props.game} profiles={this.props.profiles} />
 				<div className="overlay">
 					<SpeedControls
 						onSpeedChange={this.onSpeedUpdate.bind(this)}
@@ -67,7 +70,8 @@ class MainPage extends Component {
 					<PlayerControls
 						players={this.props.game.players}
 						profiles={this.props.profiles}
-						onPlayerProfileUpdate={this.onPlayerProfileUpdate.bind(this)}
+						onRequestUpdateProfile={this.onRequestUpdateProfile.bind(this)}
+						onPlayerProfileIdChange={this.onPlayerProfileIdChange.bind(this)}
 						onPlayerBotUpdate={this.onPlayerBotUpdate.bind(this)}
 					/>
 				</div>
