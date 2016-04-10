@@ -6,7 +6,7 @@ import * as Engine from '/shared/game/engine.js';
 
 function createDefaultState(width, height) {
 	return {
-		players: _.times(6, (i) => {
+		players: _.times(5, (i) => {
 			return {
 				playerNumber: i,
 				code: '',

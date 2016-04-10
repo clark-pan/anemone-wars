@@ -87,7 +87,7 @@ export default class PlayerControls extends React.Component {
 				{ miniSize } = this.context.muiTheme.floatingActionButton,
 				avatar = playerProfile && playerProfile.avatar ?
 					<Avatar src={playerProfile.avatar} size={miniSize} style={{display: 'block'}} /> :
-					<Avatar icon={<FontIcon className="material-icons">face</FontIcon>} color={tinycolor(colour).isLight ? 'black' : 'white'} backgroundColor="transparent" size={miniSize} />,
+					<Avatar icon={<FontIcon className="material-icons">face</FontIcon>} color={tinycolor(colour).isLight() ? 'black' : 'white'} backgroundColor="transparent" size={miniSize} />,
 				style = {
 					display: 'block',
 					marginBottom: '6px',
@@ -126,7 +126,7 @@ export default class PlayerControls extends React.Component {
 					<Avatar
 						style={{ border: `solid 3px ${selectedPlayerColour}`}}
 						icon={<FontIcon className="material-icons">face</FontIcon>}
-						color={tinycolor(selectedPlayerColour).isLight ? 'black' : 'white'}
+						color={tinycolor(selectedPlayerColour).isLight() ? 'black' : 'white'}
 						backgroundColor={selectedPlayerColour}
 						size={56}
 					/>;

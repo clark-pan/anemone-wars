@@ -1,10 +1,9 @@
 const PLAYER_COLOURS = [
-	'rgba(255, 0, 0, 1)', // red
-	'rgba(0, 255, 0, 1)', // green
-	'rgba(0, 0, 255, 1)', // blue
-	'rgba(255, 255, 0, 1)', // yellow
-	'rgba(255, 0, 255, 1)', // magenta
-	'rgba(0, 255, 255, 1)' // teal
+	'rgba(213, 15, 6, 1)',
+	'rgba(228, 170, 210, 1)',
+	'rgba(95, 77, 177, 1)',
+	'rgba(26, 23, 162, 1)',
+	'rgba(150, 150, 54, 1)'
 ];
 
 export default PLAYER_COLOURS;

@@ -1,3 +1,5 @@
+import tinycolor from 'tinycolor';
+
 import { MAX_HEALTH } from '/shared/game/anemone';
 
 import PLAYER_COLOURS from '/client/constants/PlayerColours.js';
@@ -44,11 +46,14 @@ export default class Renderer {
 			colour = null;
 		}
 
+		let textColour = tinycolor(colour).isLight() ? '#000000' : '#ffffff';
+
 		this[_drawHex](centerX, centerY, colour);
 		this.ctx.save();
 		this.ctx.font = '8px monospace';
 		this.ctx.textAlign = 'right';
 		this.ctx.textBaseline = 'bottom';
+		this.ctx.fillStyle = textColour;
 		this.ctx.fillText(x + ',' + y, centerX + HALF_HEX_SIZE, centerY + HEX_HEIGHT_RADIUS - 2);
 		this.ctx.restore();
 		if (anemone) {
@@ -56,6 +61,7 @@ export default class Renderer {
 			this.ctx.font = '8px monospace';
 			this.ctx.textAlign = 'center';
 			this.ctx.textBaseline = 'middle';
+			this.ctx.fillStyle = textColour;
 			this.ctx.fillText(anemone.health + '/' + MAX_HEALTH, centerX, centerY, HEX_WIDTH_RADIUS * 2);
 			this.ctx.restore();
 		}
