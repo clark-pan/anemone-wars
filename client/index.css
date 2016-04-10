@@ -1,0 +1,41 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,500");
+@import url("http://fonts.googleapis.com/icon?family=Material+Icons");
+
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	display: block;
+}
+
+.icon-size-m {
+	font-size: 24px !important;
+	height: 24px;
+	width: 24px;
+}
+
+.icon-size-s {
+	font-size: 20px !important;
+	height: 20px;
+	width: 20px;
+}
+
+.icon-size-xs {
+	font-size: 16px !important;
+	height: 16px;
+	width: 16px;
+}
+
+.icon-size-xxs {
+	font-size: 12px !important;
+	height: 12px;
+	width: 12px;
+}

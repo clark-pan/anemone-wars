@@ -193,7 +193,7 @@
     ],
     "no-underscore-dangle":0,
     "one-var":[
-      2,
+      0,
       "always"
     ],
     "padded-blocks":[

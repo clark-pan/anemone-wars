@@ -3,7 +3,7 @@ var cache = {};
 function getPlayerAnemones(state, player) {
 	var anemones = {}, id;
 	for (id in state.anemones) {
-		if (state.anemones[id].ownerId === player.id) {
+		if (state.anemones[id].playerNumber === player.playerNumber) {
 			anemones[id] = state.anemones[id];
 		}
 	}
@@ -22,13 +22,13 @@ function getWrappedMovesFunc(code) {
 function handleMoves(e) {
 	var state = e.data[2],
 		player = e.data[3],
-		playerCode = e.data[4] || 'function getMoves() { return {}; }',
+		playerCode = player.code || 'function getMoves() { return {}; }',
 		playerAnemones = getPlayerAnemones(state, player),
 		getMovesFunc = getWrappedMovesFunc(playerCode),
 		moves;
 
 	try {
-		moves = getMovesFunc(state, player, playerAnemones);
+		moves = getMovesFunc(state, player.playerNumber, playerAnemones);
 	} catch(err) {
 		moves = {};
 	}

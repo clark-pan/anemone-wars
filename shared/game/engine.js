@@ -3,6 +3,8 @@ import _ from 'lodash';
 import * as Anemone from './anemone';
 import * as Board from './board';
 
+// TODO refactor this to be immutable
+
 /**
  * @typedef {Object} Engine.Move
  * @description - A move a player can issue to an anemone
@@ -38,27 +40,38 @@ import * as Board from './board';
 
 const parseInt10 = (n) => parseInt(n, 10);
 
-export function getInitialState(width, height) {
+export function createGame(width, height) {
 	return {
 		board: Board.createBoard(width, height),
 		anemones: Object.create(null),
-		turn: 0,
+		turn: -1,
 		_lastAnemoneCounter: 0
 	};
 }
 
-export function getRandomInitialState(width, height, ownerIds) {
-	const state = getInitialState(width, height);
-	_.each(ownerIds, (ownerId) => {
+export function startGame(state, numPlayers) {
+	if (state.turn !== -1) {
+		throw new Error('Game has already started');
+	}
+	let tiles = _.chain(state.board)
+		.flattenDeep(state.board)
+		.shuffle()
+		.value();
+
+	_.times(numPlayers, (i) => {
 		const anemoneId = state._lastAnemoneCounter++;
-		let position, x, y;
-		do {
-			position = [_.random(width - 1), _.random(height - 1)];
-			[x, y] = position;
-		} while (state.board[x][y].occupantId != null)
-		state.anemones[anemoneId] = Anemone.create(anemoneId, ownerId, position);
-		state.board[x][y].occupantId = anemoneId;
+		let tile = tiles.pop(), position = [tile.x, tile.y];
+		state.anemones[anemoneId] = Anemone.create(anemoneId, i, position);
+		tile.occupantId = anemoneId;
 	});
+	state.turn = 0;
+
+	return state;
+}
+
+export function getRandomInitialState(width, height, numPlayers) {
+	const state = createGame(width, height);
+	startGame(state, numPlayers);
 	return state;
 }
 
@@ -149,23 +162,23 @@ function resolveSplit(state, moveSets) {
 
 	for (const positionKey in unresolvedTiles) {
 		const anemones = unresolvedTiles[positionKey],
-			groupedByPlayer = _.groupBy(anemones, 'ownerId'),
+			groupedByPlayer = _.groupBy(anemones, 'playerNumber'),
 			[x, y] = positionKey.split(':').map(parseInt10),
 			tile = state.board[x][y],
 			currentOccupant = state.anemones[tile.occupantId];
-		let currentOwnerId,
+		let currentplayerNumber,
 			largestAnemoneGroup, nextLargestHealth;
 
 		if (currentOccupant) {
-			if (!groupedByPlayer[currentOccupant.ownerId]) {
-				groupedByPlayer[currentOccupant.ownerId] = [];
+			if (!groupedByPlayer[currentOccupant.playerNumber]) {
+				groupedByPlayer[currentOccupant.playerNumber] = [];
 			}
-			groupedByPlayer[currentOccupant.ownerId].push(currentOccupant);
-			currentOwnerId = currentOccupant.ownerId;
+			groupedByPlayer[currentOccupant.playerNumber].push(currentOccupant);
+			currentplayerNumber = currentOccupant.playerNumber;
 		}
 
-		for (const ownerId in groupedByPlayer) {
-			const playerAnemones = groupedByPlayer[ownerId],
+		for (const playerNumber in groupedByPlayer) {
+			const playerAnemones = groupedByPlayer[playerNumber],
 				// 2. calculating health of a group
 				health = _.chain(playerAnemones)
 				.sortBy('health')
@@ -177,7 +190,7 @@ function resolveSplit(state, moveSets) {
 				nextLargestHealth = largestAnemoneGroup ? largestAnemoneGroup.health : 0;
 				largestAnemoneGroup = {
 					health: health,
-					ownerId: ownerId,
+					playerNumber: playerNumber,
 					anemones: playerAnemones
 				};
 			} else if (largestAnemoneGroup && largestAnemoneGroup.health === health) {
@@ -191,7 +204,7 @@ function resolveSplit(state, moveSets) {
 			const finalHealth = largestAnemoneGroup.health - nextLargestHealth;
 
 			// If the winning group is the same as the current occupant, then just update that occupant's health
-			if (largestAnemoneGroup.ownerId === currentOwnerId) {
+			if (largestAnemoneGroup.playerNumber === currentplayerNumber) {
 				Anemone.setHealth(state.anemones[currentOccupant.id], finalHealth);
 			} else {
 				const winningAnemone = largestAnemoneGroup.anemones[0];
@@ -246,28 +259,28 @@ function resolveDeath(state) {
  */
 
 export function resolve(state, moves) {
-	const nextState = _.cloneDeep(state),
-		moveSets = _.reduce(moves, (_moveSets, move, anemoneId) => {
-			if (_moveSets[move.action]) {
-				_moveSets[move.action][anemoneId] = move;
-			}
-			return _moveSets;
-		}, {
-			[Anemone.STATES.DEFEND]: Object.create(null),
-			[Anemone.STATES.ATTACK]: Object.create(null),
-			[Anemone.STATES.REGENERATE]: Object.create(null),
-			[Anemone.STATES.SPLIT]: Object.create(null)
-		});
-	nextState.turn += 1;
+	const moveSets = _.reduce(moves, (_moveSets, move, anemoneId) => {
+		if (!_.isObject(move)) return _moveSets;
+		if (_moveSets[move.action]) {
+			_moveSets[move.action][anemoneId] = move;
+		}
+		return _moveSets;
+	}, {
+		[Anemone.STATES.DEFEND]: Object.create(null),
+		[Anemone.STATES.ATTACK]: Object.create(null),
+		[Anemone.STATES.REGENERATE]: Object.create(null),
+		[Anemone.STATES.SPLIT]: Object.create(null)
+	});
+	state.turn += 1;
 
-	resolveDefense(nextState, moveSets);
-	resolveAttack(nextState, moveSets);
+	resolveDefense(state, moveSets);
+	resolveAttack(state, moveSets);
 	// The order of the resolution between split and regen is very important
 	// If we split after regen, it means that a regenerator will not be able to 'beat' a splitter as he'll be guranteed to take damage
 	// Whereas if we split after regen, it means the regenerator can heal any damage taken from the split
-	resolveSplit(nextState, moveSets);
-	resolveRegen(nextState, moveSets);
-	resolveDeath(nextState);
+	resolveSplit(state, moveSets);
+	resolveRegen(state, moveSets);
+	resolveDeath(state);
 
-	return nextState;
+	return state;
 }
