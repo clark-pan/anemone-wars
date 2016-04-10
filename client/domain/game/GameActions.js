@@ -93,7 +93,7 @@ export function generateNextGameStateAsync(game) {
 		let moves = await Promise
 			.all(
 				_.map(game.players, (player) => MoveService
-					.getPlayerMoveAsync(game.gameState, player, player.code)
+					.getPlayerMoveAsync(game.gameState, player)
 					.catch(() => { return {}; }) // Todo, better error handling
 				)
 			)

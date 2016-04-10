@@ -4,12 +4,14 @@ import { NEW_GAME, START_GAME, UPDATE_GAME_STATE, UPDATE_GAME_PLAYBACK, SELECT_P
 
 import * as Engine from '/shared/game/engine.js';
 
+import defaultCode from './DefaultPlayerCode.js!text';
+
 function createDefaultState(width, height) {
 	return {
 		players: _.times(5, (i) => {
 			return {
 				playerNumber: i,
-				code: '',
+				code: defaultCode,
 				profileId: null,
 				botPath: null
 			};

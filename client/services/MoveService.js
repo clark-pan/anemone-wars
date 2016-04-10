@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import Promise from 'bluebird';
 
 const _messages = Symbol('messages'), _worker = Symbol('worker'), _counter = Symbol('counter'),
@@ -27,8 +28,15 @@ export class MoveService {
 		this[_counter] = 0;
 	}
 
-	getPlayerMoveAsync(state, playerId, playerCode) {
-		return this[_postMessage]('getMoves', state, playerId, playerCode);
+	async getPlayerMoveAsync(state, player) {
+		let moves = await this[_postMessage]('getMoves', state, player);
+
+		if (!_.isObject(moves)) return {};
+
+		return _.pickBy(moves, (move, anemoneId) => {
+			let anemone = state.anemones[anemoneId];
+			return anemone && anemone.playerNumber === player.playerNumber;
+		});
 	}
 
 	destroy() {

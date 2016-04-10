@@ -10,7 +10,7 @@
 
 	.player-controls--editor-pane {
 		position: absolute;
-		width: 500px;
+		width: 650px;
 		right: 90px;
 		top: 0px;
 		
@@ -19,6 +19,10 @@
 		transition: opacity 250ms ease-out, transform 250ms ease-out;
 
 		will-change: transform opacity;
+	}
+
+	.player-controls--editor-pane .CodeMirror {
+		height: 500px;
 	}
 
 	.player-controls--editor-pane-hidden {

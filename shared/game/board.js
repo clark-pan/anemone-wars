@@ -15,7 +15,7 @@ import _ from 'lodash';
  *
  * The edges connect to each other, and thus the width needs to be an even number.
  *
- * Each tile looks like such:
+ * Each tile looks like such (the number represents the direction):
  *
  *    -- 0 --
  *   /       \

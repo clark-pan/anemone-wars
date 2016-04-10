@@ -260,6 +260,7 @@ function resolveDeath(state) {
 
 export function resolve(state, moves) {
 	const moveSets = _.reduce(moves, (_moveSets, move, anemoneId) => {
+		if (!_.isObject(move)) return _moveSets;
 		if (_moveSets[move.action]) {
 			_moveSets[move.action][anemoneId] = move;
 		}
