@@ -6,10 +6,10 @@ Engage in all out tentacle warfare against your fellow Actiniaria. Make your ane
 
 For now, install NodeJS, then run (in the directory)
 ```
-npm install -g jspm
+npm install -g jspm pm2
 npm install
 jspm install
-node server/index.js
+pm2 start ecosystem.json
 ```
 
 that should install dependencies and open a webserver on localhost:3000

@@ -1,0 +1,33 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  "apps" : [
+    {
+      "name"      : "WEB",
+      "script"    : "server/index.js",
+      "env": {
+        "PORT": 3000
+      },
+      "env_production": {
+        "PORT": 80
+      }
+    }
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  "deploy" : {
+    "production" : {
+      "user" : "ec2-user",
+      "host" : "anemone-wars.com",
+      "ref"  : "origin/deploy",
+      "repo" : "https://github.com/clark-pan/anemone-wars.git",
+      "path" : "/home/ec2-user/production",
+      "post-deploy" : "pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
