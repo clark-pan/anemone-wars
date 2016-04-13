@@ -2,7 +2,7 @@ import _ from 'lodash';
 
 import { NEW_GAME, START_GAME, UPDATE_GAME_STATE, UPDATE_GAME_PLAYBACK, SELECT_PLAYER_PROFILE, SELECT_PLAYER_CODE, SELECT_PLAYER_BOT } from './GameActions.js';
 
-import * as Engine from '/shared/game/engine.js';
+import * as Engine from 'shared/game/engine.js';
 
 import defaultCode from './DefaultPlayerCode.js!text';
 

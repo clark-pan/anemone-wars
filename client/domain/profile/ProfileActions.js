@@ -1,4 +1,4 @@
-import GithubService from '/client/services/GithubService.js';
+import GithubService from 'client/services/GithubService.js';
 
 export const FETCH_PROFILE_SUCCESS = Symbol('FETCH_PROFILE_SUCCESS');
 function fetchProfileSuccess(profile) {

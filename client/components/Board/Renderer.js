@@ -1,8 +1,8 @@
 import tinycolor from 'tinycolor';
 
-import { MAX_HEALTH } from '/shared/game/anemone';
+import { MAX_HEALTH } from 'shared/game/anemone';
 
-import PLAYER_COLOURS from '/client/constants/PlayerColours.js';
+import PLAYER_COLOURS from 'client/constants/PlayerColours.js';
 
 const _drawTile = Symbol('drawTile'),
 	_drawHex = Symbol('drawHex'),

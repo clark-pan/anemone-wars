@@ -1,9 +1,9 @@
 import _ from 'lodash';
 import Promise from 'bluebird';
 
-import * as Engine from '/shared/game/engine.js';
-import MoveService from '/client/services/MoveService.js';
-import GithubService from '/client/services/GithubService.js';
+import * as Engine from 'shared/game/engine.js';
+import MoveService from 'client/services/MoveService.js';
+import GithubService from 'client/services/GithubService.js';
 
 export const NEW_GAME = Symbol('NEW_GAME');
 export function addGame() {

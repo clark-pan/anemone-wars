@@ -4,17 +4,17 @@ import React from 'react';
 const { PropTypes, Component } = React;
 
 import { connect } from 'react-redux';
-import { updateGamePlayback, SPEED_MAP, selectPlayerProfile, selectPlayerBot, selectPlayerCode, fetchPlayerBotCode } from '/client/domain/game/GameActions.js';
-import { fetchProfile } from '/client/domain/profile/ProfileActions.js';
+import { updateGamePlayback, SPEED_MAP, selectPlayerProfile, selectPlayerBot, selectPlayerCode, fetchPlayerBotCode } from 'client/domain/game/GameActions.js';
+import { fetchProfile } from 'client/domain/profile/ProfileActions.js';
 
 // Material UI
 import getMuiTheme from 'material-ui/lib/styles/getMuiTheme';
 import LightTheme from 'material-ui/lib/styles/baseThemes/lightBaseTheme';
 
 // Views
-import BoardComponent from '/client/components/Board/Board';
-import SpeedControls from '/client/components/SpeedControls/SpeedControls';
-import PlayerControls from '/client/components/PlayerControls/PlayerControls';
+import BoardComponent from 'client/components/Board/Board.jsx';
+import SpeedControls from 'client/components/SpeedControls/SpeedControls.jsx';
+import PlayerControls from 'client/components/PlayerControls/PlayerControls.jsx';
 
 const SPEED_OPTION_TEXT = {
 	'slow': 'Slow',
