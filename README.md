@@ -22,7 +22,7 @@ git checkout master
 rm -rf jspm_packages
 rm -rf node_modules
 npm install && jspm install
-jspm bundle-sfx client client/bundle.js
+jspm bundle-sfx client client/bundle.js --minify
 git checkout --detach
 git add -f jspm_packages
 git add -f node_modules
