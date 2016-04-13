@@ -6,10 +6,10 @@ import { Provider } from 'react-redux';
 
 import './index.css!';
 
-import store from '/client/domain/store.js';
-import { addGame, generateNextGameStateAsync, SPEED_MAP } from '/client/domain/game/GameActions.js';
+import store from 'client/domain/store.js';
+import { addGame, generateNextGameStateAsync, SPEED_MAP } from 'client/domain/game/GameActions.js';
 
-import MainPage from '/client/routes/main/MainPage';
+import MainPage from 'client/routes/main/MainPage.jsx';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 

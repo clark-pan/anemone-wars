@@ -12,7 +12,7 @@ import {
 
 import CodeMirror from 'JedWatson/react-codemirror';
 import 'codemirror/mode/javascript/javascript.js';
-import PLAYER_COLOURS from '/client/constants/PlayerColours.js';
+import PLAYER_COLOURS from 'client/constants/PlayerColours.js';
 
 import './PlayerControls.css!';
 import 'codemirror/lib/codemirror.css!';
