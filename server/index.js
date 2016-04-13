@@ -7,7 +7,7 @@ app.use('/jspm_packages', express.static(path.join(__dirname, '../jspm_packages'
 app.use('/shared', express.static(path.join(__dirname, '../shared')));
 
 app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname, app.get('env') === 'production' ? 'index.html' : 'index.prod.html'));
+	res.sendFile(path.join(__dirname, app.get('env') === 'production' ? 'index.prod.html' : 'index.html'));
 });
 
 app.listen(process.env.PORT);
