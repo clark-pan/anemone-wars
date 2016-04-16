@@ -12,3 +12,4 @@ git add -f client
 git commit -m "Build"
 git push --force origin HEAD:refs/heads/deploy
 pm2 deploy production
+git checkout --
