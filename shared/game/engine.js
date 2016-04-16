@@ -75,16 +75,6 @@ export function getRandomInitialState(width, height, numPlayers) {
 	return state;
 }
 
-// Read description of resolve split for the reasoning behind this method
-function splitHealthAccumulator(sum, anemone, i) {
-	if (i === 0) {
-		return sum + anemone.health;
-	} else if ( i === 1) {
-		return sum + Math.min(anemone.health, 3);
-	}
-	return sum + Math.min(anemone.health, 1);
-}
-
 function resolveDefense(state, moveSets) {
 	const defendMoves = moveSets[Anemone.STATES.DEFEND];
 	for (const anemoneId in defendMoves) {
@@ -116,6 +106,27 @@ function resolveAttack(state, moveSets) {
 		// Give attack an advantage over regeneration by cancelling out a regeneration when it is attacked
 		delete regenerateMoves[target.id];
 	}
+}
+
+// Read description of resolve split for the reasoning behind this method
+function splitHealthAccumulator(sum, anemone, i) {
+	if (i === 0) {
+		return sum + anemone.health;
+	} else if ( i === 1) {
+		return sum + Math.min(anemone.health, 3);
+	}
+	return sum + Math.min(anemone.health, 1);
+}
+
+function calculateAnemoneGroupHealth(anemoneGroup) {
+	let health = _.chain(anemoneGroup)
+		.orderBy(['health'], ['desc'])
+		.reduceRight(splitHealthAccumulator, 0)
+		.value();
+	return {
+		health,
+		anemone: anemoneGroup[0]
+	};
 }
 
 /**
@@ -166,49 +177,45 @@ function resolveSplit(state, moveSets) {
 			[x, y] = positionKey.split(':').map(parseInt10),
 			tile = state.board[x][y],
 			currentOccupant = state.anemones[tile.occupantId];
-		let currentplayerNumber,
-			largestAnemoneGroup, nextLargestHealth;
+		let anemoneGroups, winningAnemone;
 
 		if (currentOccupant) {
 			if (!groupedByPlayer[currentOccupant.playerNumber]) {
 				groupedByPlayer[currentOccupant.playerNumber] = [];
 			}
-			groupedByPlayer[currentOccupant.playerNumber].push(currentOccupant);
-			currentplayerNumber = currentOccupant.playerNumber;
+			groupedByPlayer[currentOccupant.playerNumber].unshift(currentOccupant);
 		}
 
-		for (const playerNumber in groupedByPlayer) {
-			const playerAnemones = groupedByPlayer[playerNumber],
-				// 2. calculating health of a group
-				health = _.chain(playerAnemones)
-				.sortBy('health')
-				.reduceRight(splitHealthAccumulator, 0)
-				.value();
+		// 2. calculate the health of every group
+		anemoneGroups = _.chain(groupedByPlayer)
+			.map(calculateAnemoneGroupHealth)
+			.orderBy(['health'], ['desc'])
+			.value();
 
-			// 3. largest group is remembered along with second largest health
-			if (!largestAnemoneGroup || largestAnemoneGroup.health < health) {
-				nextLargestHealth = largestAnemoneGroup ? largestAnemoneGroup.health : 0;
-				largestAnemoneGroup = {
-					health: health,
-					playerNumber: playerNumber,
-					anemones: playerAnemones
-				};
-			} else if (largestAnemoneGroup && largestAnemoneGroup.health === health) {
-				nextLargestHealth = health;
-			}
-		}
-
-		// 3a. check if the largest health is not the same as the second largest health
-		if (nextLargestHealth !== largestAnemoneGroup.health) {
-			// 4. Calculate the difference and set the surviving anemone accordingly
-			const finalHealth = largestAnemoneGroup.health - nextLargestHealth;
-
-			// If the winning group is the same as the current occupant, then just update that occupant's health
-			if (largestAnemoneGroup.playerNumber === currentplayerNumber) {
-				Anemone.setHealth(state.anemones[currentOccupant.id], finalHealth);
+		// 3. Find the winner
+		if (anemoneGroups.length > 1) {
+			let [firstGroup, secondGroup] = anemoneGroups;
+			if (firstGroup.health === secondGroup.health) {
+				winningAnemone = null;
 			} else {
-				const winningAnemone = largestAnemoneGroup.anemones[0];
-				Anemone.setHealth(winningAnemone, finalHealth);
+				winningAnemone = firstGroup.anemone;
+				Anemone.setHealth(winningAnemone, firstGroup.health - secondGroup.health);
+			}
+		} else {
+			winningAnemone = anemoneGroups[0].anemone;
+		}
+
+		// 4. Put the winner on the board
+		if (!winningAnemone && currentOccupant) { // No winner, kill the guy on the current position
+			if (currentOccupant) {
+				delete state.anemones[currentOccupant.id];
+				state.board[x][y].occupantId = null;
+			}
+		} else {
+			// If the winning anemone is the currentOccupant, then nothing further needs to be done
+			if (currentOccupant && currentOccupant === winningAnemone) {
+				continue;
+			} else {
 				winningAnemone.id = state._lastAnemoneCounter++;
 				winningAnemone.position = [x, y];
 				state.anemones[winningAnemone.id] = winningAnemone;
@@ -218,12 +225,6 @@ function resolveSplit(state, moveSets) {
 					delete state.anemones[currentOccupant.id];
 				}
 			}
-		} else {
-			// 5. If the largest group's health is the same as the next largest, then everyone dies
-			if (currentOccupant) {
-				delete state.anemones[currentOccupant.id];
-			}
-			state.board[x][y].occupantId = null;
 		}
 	}
 }
