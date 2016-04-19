@@ -61,7 +61,7 @@ export function selectPlayerCode(player, code) {
 export const FETCH_PLAYER_BOT_CODE = Symbol('FETCH_PLAYER_BOT_CODE');
 export function fetchPlayerBotCode(player, botPath) {
 	return async (dispatch) => {
-		let code = await GithubService.getUserProfileBotCode(player.profileId, botPath);
+		let code = await GithubService.getUserProfileBotCodeAsync(player.profileId, botPath);
 		dispatch(selectPlayerCode(player, code));
 	};
 }

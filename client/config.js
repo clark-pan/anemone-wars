@@ -41,6 +41,7 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "fetch-polyfill": "npm:whatwg-fetch@0.11.0",
+    "fuse": "npm:fuse.js@2.2.0",
     "lodash": "npm:lodash@4.6.1",
     "material-ui": "npm:material-ui@0.15.0-alpha.2",
     "react": "npm:react@0.14.7",
@@ -149,6 +150,9 @@ System.config({
     },
     "npm:fbjs@0.6.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:fuse.js@2.2.0": {
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:graceful-readlink@1.0.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2"
