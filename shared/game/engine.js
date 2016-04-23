@@ -206,7 +206,7 @@ function resolveSplit(state, moveSets) {
 		}
 
 		// 4. Put the winner on the board
-		if (!winningAnemone && currentOccupant) { // No winner, kill the guy on the current position
+		if (!winningAnemone) { // No winner, kill the guy on the current position
 			if (currentOccupant) {
 				delete state.anemones[currentOccupant.id];
 				state.board[x][y].occupantId = null;
