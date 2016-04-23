@@ -236,7 +236,7 @@
     "react/display-name": 2,
     "react/jsx-boolean-value": 2,
     "react/jsx-closing-bracket-location": 2,
-    "react/jsx-curly-spacing": 2,
+    "react/jsx-curly-spacing": [2, "always"],
     "react/jsx-max-props-per-line": 0,
     "react/jsx-indent-props": [
       2,

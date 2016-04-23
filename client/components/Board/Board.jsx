@@ -20,20 +20,12 @@ export default class Board extends React.Component {
 		this.renderer = new Renderer(this[_canvas].getContext('2d'));
 		ReactDOM.findDOMNode(this.refs.container).appendChild(this[_canvas]);
 
-		this[_resizeHandler] = () => {
-			this[_canvas].width = window.innerWidth;
-			this[_canvas].height = window.innerHeight;
-			if (this.props.game) {
-				this[_draw]();
-			}
-		};
-
-		window.addEventListener('resize', this[_resizeHandler]);
+		window.addEventListener('resize', this[_resizeHandler].bind(this));
 		this[_resizeHandler]();
 	}
 
 	shouldComponentUpdate(nextProps) {
-		if (!nextProps.game) return false;
+		if (!nextProps.game.gameState) return false;
 		return nextProps.game.gameState !== this.props.game.gameState || this[_lastRenderedTurn] !== this.props.game.gameState.turn;
 	}
 
@@ -41,14 +33,22 @@ export default class Board extends React.Component {
 		this[_draw]();
 	}
 
+	[_resizeHandler]() {
+		this[_canvas].width = window.innerWidth;
+		this[_canvas].height = window.innerHeight;
+		this[_draw]();
+	}
+
 	[_draw]() {
-		this[_lastRenderedTurn] = this.props.game.gameState.turn;
-		this.renderer.draw(this.props.game, this.props.profiles);
+		if (this.props.game.gameState) {
+			this[_lastRenderedTurn] = this.props.game.gameState.turn;
+			this.renderer.draw(this.props.game, this.props.profiles);
+		}
 	}
 
 	render() {
 		return (
-			<div ref="container" styles={Board.styles} />
+			<div ref="container" styles={ Board.styles } />
 		);
 	}
 }

@@ -7,8 +7,8 @@ import { connect } from 'react-redux';
 import { updateGamePlayback, SPEED_MAP } from 'client/domain/game/GameActions.js';
 
 // Material UI
-import getMuiTheme from 'material-ui/lib/styles/getMuiTheme';
-import LightTheme from 'material-ui/lib/styles/baseThemes/lightBaseTheme';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import LightTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
 // Views
 import BoardComponent from 'client/components/Board/Board.jsx';

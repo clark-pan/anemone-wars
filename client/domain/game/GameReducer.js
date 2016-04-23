@@ -23,7 +23,7 @@ function createDefaultState(width, height) {
 	};
 }
 
-export default function gameReducer(state = null, action) {
+export default function gameReducer(state = {}, action) {
 	switch (action.type) {
 		case NEW_GAME:
 			let newState = createDefaultState(action.width, action.height);
