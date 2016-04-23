@@ -6,7 +6,7 @@ import MoveService from 'client/services/MoveService.js';
 import GithubService from 'client/services/GithubService.js';
 
 export const NEW_GAME = Symbol('NEW_GAME');
-export function addGame() {
+export function newGame() {
 	return {
 		type: NEW_GAME,
 		numPlayers: 6,
