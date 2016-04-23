@@ -4,8 +4,7 @@ import React from 'react';
 const { PropTypes, Component } = React;
 
 import { connect } from 'react-redux';
-import { updateGamePlayback, SPEED_MAP, selectPlayerProfile, selectPlayerBot, selectPlayerCode, fetchPlayerBotCode } from 'client/domain/game/GameActions.js';
-import { fetchProfile } from 'client/domain/profile/ProfileActions.js';
+import { updateGamePlayback, SPEED_MAP } from 'client/domain/game/GameActions.js';
 
 // Material UI
 import getMuiTheme from 'material-ui/lib/styles/getMuiTheme';
@@ -42,23 +41,6 @@ class MainPage extends Component {
 		this.props.updateGamePlayback(running, this.props.game.speed);
 	}
 
-	onRequestUpdateProfile(profileId) {
-		this.props.fetchProfile(profileId);
-	}
-
-	onPlayerProfileIdChange(player, profileId) {
-		this.props.selectPlayerProfile(player, profileId);
-	}
-
-	onPlayerBotUpdate(player, botPath) {
-		this.props.selectPlayerBot(player, botPath);
-		this.props.fetchPlayerBotCode(player, botPath);
-	}
-
-	onPlayerCodeUpdate(player, code) {
-		this.props.selectPlayerCode(player, code);
-	}
-
 	render() {
 		return (
 			<div>
@@ -71,14 +53,7 @@ class MainPage extends Component {
 						speedOptions={SPEED_OPTION_TEXT}
 						speedValue={this.props.game.speed}
 					/>
-					<PlayerControls
-						players={this.props.game.players}
-						profiles={this.props.profiles}
-						onRequestUpdateProfile={this.onRequestUpdateProfile.bind(this)}
-						onPlayerProfileIdChange={this.onPlayerProfileIdChange.bind(this)}
-						onPlayerBotUpdate={this.onPlayerBotUpdate.bind(this)}
-						onPlayerCodeUpdate={this.onPlayerCodeUpdate.bind(this)}
-					/>
+					<PlayerControls />
 				</div>
 			</div>
 		);
@@ -97,11 +72,7 @@ MainPage.propTypes = {
 		speed: PropTypes.oneOf(_.keys(SPEED_MAP))
 	}).isRequired,
 	profiles: PropTypes.object.isRequired,
-	updateGamePlayback: PropTypes.func.isRequired,
-	selectPlayerProfile: PropTypes.func.isRequired,
-	selectPlayerBot: PropTypes.func.isRequired,
-	fetchProfile: PropTypes.func.isRequired,
-	fetchPlayerBotCode: PropTypes.func.isRequired
+	updateGamePlayback: PropTypes.func.isRequired
 };
 
 export default connect((state) => {
@@ -113,21 +84,6 @@ export default connect((state) => {
 	return {
 		updateGamePlayback: (running, speed) => {
 			dispatch(updateGamePlayback(running, speed));
-		},
-		selectPlayerProfile: (player, profileId) => {
-			dispatch(selectPlayerProfile(player, profileId));
-		},
-		selectPlayerBot: (player, botPath) => {
-			dispatch(selectPlayerBot(player, botPath));
-		},
-		selectPlayerCode: (player, code) => {
-			dispatch(selectPlayerCode(player, code));
-		},
-		fetchProfile: (profileId) => {
-			dispatch(fetchProfile(profileId));
-		},
-		fetchPlayerBotCode: (player, botPath) => {
-			dispatch(fetchPlayerBotCode(player, botPath));
 		}
 	};
 })(MainPage);

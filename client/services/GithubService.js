@@ -36,8 +36,9 @@ export class GithubService {
 	}
 
 	async getAvailableUserProfilesAsync(searchTerm = '') {
+		const limitedTerm = searchTerm.length > 32 ? searchTerm.substr(0, 32) : searchTerm;
 		let store = await this[_getAllUserProfilesAsync]();
-		return searchTerm ? store.search(searchTerm) : _.clone(store.list);
+		return limitedTerm ? store.search(limitedTerm) : _.clone(store.list);
 	}
 
 	async [_getUserAnemoneJSONAsync](username) {

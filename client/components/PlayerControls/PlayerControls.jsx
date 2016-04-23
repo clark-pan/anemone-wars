@@ -2,12 +2,16 @@ import _ from 'lodash';
 
 import React from 'react/addons';
 import tinycolor from 'tinycolor';
+import { connect } from 'react-redux';
+import { selectPlayerProfile, selectPlayerBot, fetchPlayerBotCode, selectPlayerCode } from 'client/domain/game/GameActions.js';
+import { fetchProfile } from 'client/domain/profile/ProfileActions.js';
+import { fetchProfileSummary } from 'client/domain/profile-summary/ProfileSummaryActions.js';
 
 import {
 	Card, CardMedia, CardActions,
 	FlatButton, FloatingActionButton, IconMenu,
 	Avatar, Badge, FontIcon,
-	MenuItem, SelectField, TextField
+	MenuItem, SelectField, AutoComplete
 } from 'material-ui';
 
 import CodeMirror from 'JedWatson/react-codemirror';
@@ -23,10 +27,11 @@ const _renderControls = Symbol('renderControls'),
 	_onBotSelect = Symbol('onBotSelect'),
 	_onCodeUpdate = Symbol('onCodeUpdate'),
 	_onProfileFieldChange = Symbol('onProfileFieldChange'),
-	_onProfileFieldKeyDown = Symbol('onProfileFieldKeyDown'),
-	_onProfileFieldEnterKey = Symbol('onProfileFieldEnterKey');
+	_onRequestProfileSummary = Symbol('onRequestProfileSummary'),
+	_debouncedOnRequestProfileSummary = Symbol('debouncedOnRequestProfileSummary'),
+	_onAutocompleteFocus = Symbol('onAutocompleteFocus');
 
-export default class PlayerControls extends React.Component {
+class PlayerControls extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -34,6 +39,9 @@ export default class PlayerControls extends React.Component {
 			selectedPlayerNumber: null,
 			avatarControlsViewState: null
 		};
+
+		this[_debouncedOnRequestProfileSummary] = _.debounce(this[_onRequestProfileSummary], 700);
+		this[_onAutocompleteFocus] = _.once(this[_onRequestProfileSummary].bind(this, ''));
 	}
 
 	get [_selectedPlayer]() {
@@ -59,24 +67,23 @@ export default class PlayerControls extends React.Component {
 		}
 	}
 
-	[_onProfileFieldKeyDown](event) {
-		switch (event.which) {
-			case 13: // Enter
-				this[_onProfileFieldEnterKey](event);
-				break;
-			default: // Deliberately empty
-		}
-	}
+	[_onProfileFieldChange](chosenRequest) {
+		let playerId;
 
-	[_onProfileFieldChange](event, value) {
+		// Work around bug in material-ui library. https://github.com/callemall/material-ui/pull/4076
+		if (typeof chosenRequest === 'object' && chosenRequest.text != null) {
+			playerId = chosenRequest.text;
+		} else {
+			playerId = chosenRequest;
+		}
+
 		if (this[_selectedPlayer]) {
-			this.props.onPlayerProfileIdChange(this[_selectedPlayer], value);
+			this.props.onPlayerProfileIdChange(this[_selectedPlayer], playerId);
 		}
 	}
 
-	[_onProfileFieldEnterKey](event) {
-		event.preventDefault();
-		this.props.onRequestUpdateProfile(event.target.value);
+	async [_onRequestProfileSummary](searchTerm) {
+		this.props.onRequestProfileSummary(searchTerm);
 	}
 
 	[_renderControls](selectedPlayer) {
@@ -151,7 +158,8 @@ export default class PlayerControls extends React.Component {
 				avatarControlsComponent = (
 					<SelectField
 						fullWidth={true}
-						floatingLabelText="Select bot"
+						floatingLabelText="Bot"
+						hintText="Select a bot"
 						style={{ overflow: 'hidden' }}
 						value={selectedPlayer.botPath}
 						onChange={this[_onBotSelect].bind(this)}
@@ -162,14 +170,29 @@ export default class PlayerControls extends React.Component {
 					</SelectField>
 				);
 			} else {
+				let dataSource = _.map(this.props.profileSummary.summaries, (summary) => {
+					return {
+						text: summary.id,
+						value: (
+							<MenuItem
+								primaryText={summary.id}
+								leftIcon={<Avatar src={summary.avatar} />}
+							/>
+						)
+					};
+				});
 				avatarControlsComponent = (
-					<TextField
+					<AutoComplete
 						fullWidth={true}
-						floatingLabelText="Select github account"
-						hintText="Press enter to search"
-						value={selectedPlayer.profileId}
-						onChange={this[_onProfileFieldChange].bind(this)}
-						onKeyDown={this[_onProfileFieldKeyDown].bind(this)}
+						floatingLabelText="Github account"
+						hintText="Choose a user or press enter to select"
+						openOnFocus={true}
+						filter={_.constant(true)}
+						maxSearchResults={10}
+						dataSource={dataSource}
+						onFocus={this[_onAutocompleteFocus]}
+						onNewRequest={this[_onProfileFieldChange].bind(this)}
+						onUpdateInput={this[_debouncedOnRequestProfileSummary].bind(this)}
 					/>
 				);
 			}
@@ -227,17 +250,38 @@ PlayerControls.displayName = 'PlayerControls';
 PlayerControls.propTypes = {
 	players: React.PropTypes.array.isRequired,
 	profiles: React.PropTypes.object.isRequired,
-	onRequestUpdateProfile: React.PropTypes.func,
-	onPlayerProfileIdChange: React.PropTypes.func,
-	onPlayerBotUpdate: React.PropTypes.func,
-	onPlayerCodeUpdate: React.PropTypes.func
-};
-PlayerControls.defaultProps = {
-	onRequestUpdateProfile: _.noop,
-	onPlayerProfileIdChange: _.noop,
-	onPlayerBotUpdate: _.noop,
-	onPlayerCodeUpdate: _.noop
+	profileSummary: React.PropTypes.object.isRequired,
+	onPlayerProfileIdChange: React.PropTypes.func.isRequired,
+	onPlayerBotUpdate: React.PropTypes.func.isRequired,
+	onPlayerCodeUpdate: React.PropTypes.func.isRequired,
+	onRequestProfileSummary: React.PropTypes.func.isRequired
+
 };
 PlayerControls.contextTypes = {
 	muiTheme: React.PropTypes.object
 };
+
+export default connect((state) => {
+	return {
+		players: state.game.players,
+		profiles: state.profiles,
+		profileSummary: state.profileSummary
+	};
+}, (dispatch) => {
+	return {
+		onPlayerProfileIdChange(player, profileId) {
+			dispatch(fetchProfile(profileId));
+			dispatch(selectPlayerProfile(player, profileId));
+		},
+		onPlayerBotUpdate(player, botPath) {
+			dispatch(selectPlayerBot(player, botPath));
+			dispatch(fetchPlayerBotCode(player, botPath));
+		},
+		onPlayerCodeUpdate: (player, code) => {
+			dispatch(selectPlayerCode(player, code));
+		},
+		onRequestProfileSummary: (searchTerm) => {
+			dispatch(fetchProfileSummary(searchTerm));
+		}
+	};
+})(PlayerControls);
