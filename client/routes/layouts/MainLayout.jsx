@@ -26,6 +26,7 @@ export default class MainLayout extends Component {
 	static childContextTypes = {
 		muiTheme: PropTypes.object
 	};
+
 	getChildContext() {
 		return {
 			muiTheme: getMuiTheme(LightTheme)

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import React from 'react/addons';
+import React from 'react';
 import tinycolor from 'tinycolor';
 import { connect } from 'react-redux';
 import { selectPlayerProfile, selectPlayerBot, fetchPlayerBotCode, selectPlayerCode } from 'client/domain/game/GameActions.js';
@@ -31,7 +31,46 @@ const _renderControls = Symbol('renderControls'),
 	_debouncedOnRequestProfileSummary = Symbol('debouncedOnRequestProfileSummary'),
 	_onAutocompleteFocus = Symbol('onAutocompleteFocus');
 
-class PlayerControls extends React.Component {
+
+@connect((state) => {
+	return {
+		players: state.game.players || [],
+		profiles: state.profiles,
+		profileSummary: state.profileSummary
+	};
+}, (dispatch) => {
+	return {
+		onPlayerProfileIdChange(player, profileId) {
+			dispatch(fetchProfile(profileId));
+			dispatch(selectPlayerProfile(player, profileId));
+		},
+		onPlayerBotUpdate(player, botPath) {
+			dispatch(selectPlayerBot(player, botPath));
+			dispatch(fetchPlayerBotCode(player, botPath));
+		},
+		onPlayerCodeUpdate: (player, code) => {
+			dispatch(selectPlayerCode(player, code));
+		},
+		onRequestProfileSummary: (searchTerm) => {
+			dispatch(fetchProfileSummary(searchTerm));
+		}
+	};
+})
+export default class PlayerControls extends React.Component {
+	static displayName = 'PlayerControls';
+	static propTypes = {
+		players: React.PropTypes.array.isRequired,
+		profiles: React.PropTypes.object.isRequired,
+		profileSummary: React.PropTypes.object.isRequired,
+		onPlayerProfileIdChange: React.PropTypes.func.isRequired,
+		onPlayerBotUpdate: React.PropTypes.func.isRequired,
+		onPlayerCodeUpdate: React.PropTypes.func.isRequired,
+		onRequestProfileSummary: React.PropTypes.func.isRequired
+	};
+	static contextTypes = {
+		muiTheme: React.PropTypes.object
+	};
+
 	constructor(props) {
 		super(props);
 
@@ -93,8 +132,8 @@ class PlayerControls extends React.Component {
 				colour = playerProfile && playerProfile.colour || PLAYER_COLOURS[key],
 				{ miniSize } = this.context.muiTheme.floatingActionButton,
 				avatar = playerProfile && playerProfile.avatar ?
-					<Avatar src={playerProfile.avatar} size={miniSize} style={{display: 'block'}} /> :
-					<Avatar icon={<FontIcon className="material-icons">face</FontIcon>} color={tinycolor(colour).isLight() ? 'black' : 'white'} backgroundColor="transparent" size={miniSize} />,
+					<Avatar src={ playerProfile.avatar } size={ miniSize } style={ {display: 'block'} } /> :
+					<Avatar icon={ <FontIcon className="material-icons">face</FontIcon> } color={ tinycolor(colour).isLight() ? 'black' : 'white' } backgroundColor="transparent" size={ miniSize } />,
 				style = {
 					display: 'block',
 					marginBottom: '6px',
@@ -104,8 +143,8 @@ class PlayerControls extends React.Component {
 				};
 
 			return (
-				<FloatingActionButton backgroundColor={colour} style={style} key={key} mini={true} onClick={this[_onPlayerSelect].bind(this, player)}>
-					{avatar}
+				<FloatingActionButton backgroundColor={ colour } style={ style } key={ key } mini={ true } onClick={ this[_onPlayerSelect].bind(this, player) }>
+					{ avatar }
 				</FloatingActionButton>
 			);
 		});
@@ -126,26 +165,26 @@ class PlayerControls extends React.Component {
 			let selectedPlayerColour = selectedProfile && selectedProfile.colour || PLAYER_COLOURS[this.state.selectedPlayerNumber],
 				playerAvatar = selectedProfile && selectedProfile.avatar ?
 					<Avatar
-						style={{ border: `solid 3px ${selectedPlayerColour}`, display: 'block'}}
-						src={selectedProfile.avatar}
-						size={58}
+						style={ { border: `solid 3px ${selectedPlayerColour}`, display: 'block'} }
+						src={ selectedProfile.avatar }
+						size={ 58 }
 					/> :
 					<Avatar
-						style={{ border: `solid 3px ${selectedPlayerColour}`}}
-						icon={<FontIcon className="material-icons">face</FontIcon>}
-						color={tinycolor(selectedPlayerColour).isLight() ? 'black' : 'white'}
-						backgroundColor={selectedPlayerColour}
-						size={56}
+						style={ { border: `solid 3px ${selectedPlayerColour}`} }
+						icon={ <FontIcon className="material-icons">face</FontIcon> }
+						color={ tinycolor(selectedPlayerColour).isLight() ? 'black' : 'white' }
+						backgroundColor={ selectedPlayerColour }
+						size={ 56 }
 					/>;
 
 			paneClassName = 'player-controls--editor-pane';
 			paneAvatarIconElement = (
 				<Badge
-					style={{ padding: '0', cursor: 'pointer' }}
-					badgeStyle={{ top: 'auto', right: 'auto', left: '0px', 'bottom': '0px', 'transform': 'translate(-20%, 20%)' }}
-					badgeContent={<FontIcon className="material-icons icon-size-xs" style={{ pointerEvents: 'none' }}>mode_edit</FontIcon>}
+					style={ { padding: '0', cursor: 'pointer' } }
+					badgeStyle={ { top: 'auto', right: 'auto', left: '0px', 'bottom': '0px', 'transform': 'translate(-20%, 20%)' } }
+					badgeContent={ <FontIcon className="material-icons icon-size-xs" style={ { pointerEvents: 'none' } }>mode_edit</FontIcon> }
 				>
-					{playerAvatar}
+					{ playerAvatar }
 				</Badge>
 			);
 
@@ -157,15 +196,15 @@ class PlayerControls extends React.Component {
 			if (selectedPlayer && selectedProfile && avatarControlsViewState === 'select-bot') {
 				avatarControlsComponent = (
 					<SelectField
-						fullWidth={true}
+						fullWidth={ true }
 						floatingLabelText="Bot"
 						hintText="Select a bot"
-						style={{ overflow: 'hidden' }}
-						value={selectedPlayer.botPath}
-						onChange={this[_onBotSelect].bind(this)}
+						style={ { overflow: 'hidden' } }
+						value={ selectedPlayer.botPath }
+						onChange={ this[_onBotSelect].bind(this) }
 					>
 						{
-							_.map(selectedProfile.bots, (bot) => <MenuItem key={bot.name} value={bot.path} primaryText={bot.name} />)
+							_.map(selectedProfile.bots, (bot) => <MenuItem key={ bot.name } value={ bot.path } primaryText={ bot.name } />)
 						}
 					</SelectField>
 				);
@@ -175,24 +214,24 @@ class PlayerControls extends React.Component {
 						text: summary.id,
 						value: (
 							<MenuItem
-								primaryText={summary.id}
-								leftIcon={<Avatar src={summary.avatar} />}
+								primaryText={ summary.id }
+								leftIcon={ <Avatar src={ summary.avatar } /> }
 							/>
 						)
 					};
 				});
 				avatarControlsComponent = (
 					<AutoComplete
-						fullWidth={true}
+						fullWidth={ true }
 						floatingLabelText="Github account"
 						hintText="Choose a user or press enter to select"
-						openOnFocus={true}
-						filter={_.constant(true)}
-						maxSearchResults={10}
-						dataSource={dataSource}
-						onFocus={this[_onAutocompleteFocus]}
-						onNewRequest={this[_onProfileFieldChange].bind(this)}
-						onUpdateInput={this[_debouncedOnRequestProfileSummary].bind(this)}
+						openOnFocus={ true }
+						filter={ _.constant(true) }
+						maxSearchResults={ 10 }
+						dataSource={ dataSource }
+						onFocus={ this[_onAutocompleteFocus] }
+						onNewRequest={ this[_onProfileFieldChange].bind(this) }
+						onUpdateInput={ this[_debouncedOnRequestProfileSummary].bind(this) }
 					/>
 				);
 			}
@@ -202,34 +241,34 @@ class PlayerControls extends React.Component {
 		}
 
 		pane = (
-			<div className={paneClassName} key="pane">
+			<div className={ paneClassName } key="pane">
 				<Card>
 					<div className="player-controls--editor-header">
 						<IconMenu
 							className="player-controls--editor-avatar"
-							style={{ position: 'absolute'}}
-							anchorOrigin={{ 'vertical': 'bottom', 'horizontal': 'left' }}
-							iconButtonElement={paneAvatarIconElement}
-							value={avatarControlsViewState}
-							onChange={(event, value) => { this.setState({ avatarControlsViewState: value }); }}
+							style={ { position: 'absolute'} }
+							anchorOrigin={ { 'vertical': 'bottom', 'horizontal': 'left' } }
+							iconButtonElement={ paneAvatarIconElement }
+							value={ avatarControlsViewState }
+							onChange={ (event, value) => { this.setState({ avatarControlsViewState: value }); } }
 						>
 							<MenuItem primaryText="Change Profile" value="select-profile" />
-							<MenuItem primaryText="Change Bot" value="select-bot" disabled={!selectedProfile} />
+							<MenuItem primaryText="Change Bot" value="select-bot" disabled={ !selectedProfile } />
 						</IconMenu>
-						{avatarControlsComponent}
+						{ avatarControlsComponent }
 					</div>
 					<CardMedia>
 						<CodeMirror
-							options={{
+							options={ {
 								lineNumbers: true,
 								mode: 'javascript'
-							}}
-							onChange={this[_onCodeUpdate].bind(this)}
-							value={selectedPlayerCode}
+							} }
+							onChange={ this[_onCodeUpdate].bind(this) }
+							value={ selectedPlayerCode }
 						/>
 					</CardMedia>
 					<CardActions>
-						<FlatButton label="Close" onClick={() => this.setState({selectedPlayerNumber: null})} />
+						<FlatButton label="Close" onClick={ () => this.setState({selectedPlayerNumber: null}) } />
 					</CardActions>
 				</Card>
 			</div>
@@ -238,50 +277,10 @@ class PlayerControls extends React.Component {
 		return (
 			<div className="player-controls">
 				<div className="player-controls--list">
-					{controls}
+					{ controls }
 				</div>
-				{pane}
+				{ pane }
 			</div>
 		);
 	}
 }
-
-PlayerControls.displayName = 'PlayerControls';
-PlayerControls.propTypes = {
-	players: React.PropTypes.array.isRequired,
-	profiles: React.PropTypes.object.isRequired,
-	profileSummary: React.PropTypes.object.isRequired,
-	onPlayerProfileIdChange: React.PropTypes.func.isRequired,
-	onPlayerBotUpdate: React.PropTypes.func.isRequired,
-	onPlayerCodeUpdate: React.PropTypes.func.isRequired,
-	onRequestProfileSummary: React.PropTypes.func.isRequired
-
-};
-PlayerControls.contextTypes = {
-	muiTheme: React.PropTypes.object
-};
-
-export default connect((state) => {
-	return {
-		players: state.game.players,
-		profiles: state.profiles,
-		profileSummary: state.profileSummary
-	};
-}, (dispatch) => {
-	return {
-		onPlayerProfileIdChange(player, profileId) {
-			dispatch(fetchProfile(profileId));
-			dispatch(selectPlayerProfile(player, profileId));
-		},
-		onPlayerBotUpdate(player, botPath) {
-			dispatch(selectPlayerBot(player, botPath));
-			dispatch(fetchPlayerBotCode(player, botPath));
-		},
-		onPlayerCodeUpdate: (player, code) => {
-			dispatch(selectPlayerCode(player, code));
-		},
-		onRequestProfileSummary: (searchTerm) => {
-			dispatch(fetchProfileSummary(searchTerm));
-		}
-	};
-})(PlayerControls);
