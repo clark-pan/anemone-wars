@@ -6,9 +6,9 @@ import * as Engine from 'shared/game/engine.js';
 
 import defaultCode from './DefaultPlayerCode.js!text';
 
-function createDefaultState(width, height) {
+function createDefaultState(width, height, numPlayers) {
 	return {
-		players: _.times(5, (i) => {
+		players: _.times(numPlayers, (i) => {
 			return {
 				playerNumber: i,
 				code: defaultCode,
@@ -25,16 +25,18 @@ function createDefaultState(width, height) {
 
 export default function gameReducer(state = {}, action) {
 	switch (action.type) {
-		case NEW_GAME:
-			let newState = createDefaultState(action.width, action.height);
+		case NEW_GAME: {
+			let newState = createDefaultState(action.width, action.height, action.numPlayers);
 			
 			return newState;
+		}
 		case START_GAME:
 			return {
 				...state,
-				gameState: Engine.startGame(state.gameState, action.players.length)
+				gameState: Engine.startGame(state.gameState, state.players.length)
 			};
 		case UPDATE_GAME_STATE:
+			if (action.previousTurnNumber !== state.gameState.turn) return state;
 			return {
 				...state,
 				gameState: action.gameState

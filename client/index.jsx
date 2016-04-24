@@ -8,19 +8,16 @@ import { Router } from 'react-router';
 import './index.css!';
 
 import store, { history } from 'client/domain/store.js';
-import routes from 'client/routes/index.jsx';
-import { newGame } from 'client/domain/game/GameActions.js';
+import getRoutes from 'client/routes/index.jsx';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 injectTapEventPlugin();
 
-setTimeout(() => store.dispatch(newGame()));
-
 ReactDOM.render(
 	<Provider store={ store }>
 		<Router history={ history }>
-			{ routes }
+			{ getRoutes(store) }
 		</Router>
 	</Provider>
 , document.getElementById('app'));

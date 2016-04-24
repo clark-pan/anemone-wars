@@ -143,7 +143,7 @@ export default class PlayerControls extends React.Component {
 				};
 
 			return (
-				<FloatingActionButton backgroundColor={ colour } style={ style } key={ key } mini={ true } onClick={ this[_onPlayerSelect].bind(this, player) }>
+				<FloatingActionButton mini backgroundColor={ colour } style={ style } key={ key } onClick={ this[_onPlayerSelect].bind(this, player) }>
 					{ avatar }
 				</FloatingActionButton>
 			);
@@ -180,7 +180,7 @@ export default class PlayerControls extends React.Component {
 			paneClassName = 'player-controls--editor-pane';
 			paneAvatarIconElement = (
 				<Badge
-					style={ { padding: '0', cursor: 'pointer' } }
+					style={ { padding: '0px', cursor: 'pointer' } }
 					badgeStyle={ { top: 'auto', right: 'auto', left: '0px', 'bottom': '0px', 'transform': 'translate(-20%, 20%)' } }
 					badgeContent={ <FontIcon className="material-icons icon-size-xs" style={ { pointerEvents: 'none' } }>mode_edit</FontIcon> }
 				>
@@ -196,7 +196,7 @@ export default class PlayerControls extends React.Component {
 			if (selectedPlayer && selectedProfile && avatarControlsViewState === 'select-bot') {
 				avatarControlsComponent = (
 					<SelectField
-						fullWidth={ true }
+						fullWidth
 						floatingLabelText="Bot"
 						hintText="Select a bot"
 						style={ { overflow: 'hidden' } }
@@ -215,17 +215,17 @@ export default class PlayerControls extends React.Component {
 						value: (
 							<MenuItem
 								primaryText={ summary.id }
-								leftIcon={ <Avatar src={ summary.avatar } /> }
+								leftIcon={ <Avatar src={ summary.avatar } size={ 26 } /> }
 							/>
 						)
 					};
 				});
 				avatarControlsComponent = (
 					<AutoComplete
-						fullWidth={ true }
+						fullWidth
+						openOnFocus
 						floatingLabelText="Github account"
 						hintText="Choose a user or press enter to select"
-						openOnFocus={ true }
 						filter={ _.constant(true) }
 						maxSearchResults={ 10 }
 						dataSource={ dataSource }

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import './LocalGamePage.css!';
 
-import { updateGamePlayback } from 'client/domain/game/GameActions.js';
+import { updateGamePlayback, newGame } from 'client/domain/game/GameActions.js';
 
 import SpeedControls from 'client/components/SpeedControls/SpeedControls.jsx';
 import PlayerControls from 'client/components/PlayerControls/PlayerControls.jsx';
@@ -32,6 +32,10 @@ export default class LocalGamePage extends Component {
 		updateGamePlayback: PropTypes.func.isRequired
 	};
 
+	static onEnter(store) {
+		return store.dispatch(newGame());
+	}
+
 	onSpeedUpdate(speed) {
 		this.props.updateGamePlayback(this.props.game.running, speed);
 	}
@@ -51,7 +55,6 @@ export default class LocalGamePage extends Component {
 					speedValue={ this.props.game.speed }
 				/>
 				<PlayerControls />
-				<MenuControls />
 			</div>
 		);
 	}

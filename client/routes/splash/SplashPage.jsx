@@ -5,6 +5,8 @@ import { Menu, MenuItem, Paper } from 'material-ui';
 
 import SPLASH from 'client/constants/splash.txt!text';
 
+import { startSampleGameAsync } from 'client/domain/game/GameActions.js';
+
 import './SplashPage.css!';
 
 export default class SplashPage extends Component {
@@ -12,6 +14,10 @@ export default class SplashPage extends Component {
 	static contextTypes = {
 		router: routerShape.isRequired
 	};
+	static onEnter(store) {
+		return store.dispatch(startSampleGameAsync());
+	}
+
 	render() {
 		return (
 			<div className="splash">
@@ -22,7 +28,7 @@ export default class SplashPage extends Component {
 					<Menu style={ { opacity: 1, background: '#ffffff' } }>
 						<MenuItem primaryText="How to play" />
 						<MenuItem primaryText="Practise" onTouchTap={ () => this.context.router.push('/local-game') } />
-						<MenuItem primaryText="Tournament" disabled={ true } title="Coming soon!" />
+						<MenuItem primaryText="Tournament" disabled title="Coming soon!" />
 					</Menu>
 				</Paper>
 			</div>

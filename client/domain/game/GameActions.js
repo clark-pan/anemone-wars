@@ -9,25 +9,26 @@ export const NEW_GAME = Symbol('NEW_GAME');
 export function newGame() {
 	return {
 		type: NEW_GAME,
-		numPlayers: 6,
+		numPlayers: 5,
 		width: 40,
 		height: 20
 	};
 }
 
 export const START_GAME = Symbol('START_GAME');
-export function startGame(players) {
+export function startGame() {
 	return {
-		type: START_GAME,
-		players: players
+		type: START_GAME
 	};
 }
 
 export const UPDATE_GAME_STATE = Symbol('UPDATE_GAME_STATE');
-export function updateGameState(gameState) {
+export function updateGameState(gameState, moves, previousTurnNumber) {
 	return {
 		type: UPDATE_GAME_STATE,
-		gameState: gameState
+		gameState: gameState,
+		moves: moves,
+		previousTurnNumber: previousTurnNumber
 	};
 }
 
@@ -87,8 +88,9 @@ export function updateGamePlayback(running, speed) {
 export function generateNextGameStateAsync(game) {
 	return async (dispatch) => {
 		if (game.gameState.turn === -1) {
-			dispatch(startGame(game.players));
+			dispatch(startGame());
 		}
+		let turn = game.gameState.turn;
 
 		let moves = await Promise
 			.all(
@@ -100,7 +102,17 @@ export function generateNextGameStateAsync(game) {
 			.reduce((acc, moreMoves) => _.assign(acc, moreMoves));
 
 		let nextState = Engine.resolve(game.gameState, moves);
-		dispatch(updateGameState(nextState));
-		return nextState;
+		dispatch(updateGameState(nextState, moves, turn));
+	};
+}
+
+export function startSampleGameAsync() {
+	return async (dispatch) => {
+		dispatch(updateGamePlayback(false, 'faster'));
+		await dispatch(newGame());
+		let code = await System.import('client/domain/game/SplashBot.js!text');
+		_.times(5, (i) => dispatch(selectPlayerCode({ playerNumber: i }, code)));
+		dispatch(startGame());
+		dispatch(updateGamePlayback(true, 'faster'));
 	};
 }

@@ -272,16 +272,19 @@ export function resolve(state, moves) {
 		[Anemone.STATES.REGENERATE]: Object.create(null),
 		[Anemone.STATES.SPLIT]: Object.create(null)
 	});
-	state.turn += 1;
+	let nextState = {
+		...state
+	};
+	nextState.turn += 1;
 
-	resolveDefense(state, moveSets);
-	resolveAttack(state, moveSets);
+	resolveDefense(nextState, moveSets);
+	resolveAttack(nextState, moveSets);
 	// The order of the resolution between split and regen is very important
 	// If we split after regen, it means that a regenerator will not be able to 'beat' a splitter as he'll be guranteed to take damage
 	// Whereas if we split after regen, it means the regenerator can heal any damage taken from the split
-	resolveSplit(state, moveSets);
-	resolveRegen(state, moveSets);
-	resolveDeath(state);
+	resolveSplit(nextState, moveSets);
+	resolveRegen(nextState, moveSets);
+	resolveDeath(nextState);
 
-	return state;
+	return nextState;
 }
