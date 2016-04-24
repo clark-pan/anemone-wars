@@ -26,7 +26,7 @@ export default class SplashPage extends Component {
 				</Paper>
 				<Paper className="splash-paper">
 					<Menu style={ { opacity: 1, background: '#ffffff' } }>
-						<MenuItem primaryText="How to play" />
+						<MenuItem primaryText="How to play" disabled title="Coming soon!" />
 						<MenuItem primaryText="Practise" onTouchTap={ () => this.context.router.push('/local-game') } />
 						<MenuItem primaryText="Tournament" disabled title="Coming soon!" />
 					</Menu>
