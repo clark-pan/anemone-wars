@@ -1,0 +1,1 @@
+module.exports = require("npm:fuse.js@2.2.0/src/fuse.js");

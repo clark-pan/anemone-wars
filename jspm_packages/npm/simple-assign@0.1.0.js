@@ -1,0 +1,1 @@
+module.exports = require("npm:simple-assign@0.1.0/index.js");

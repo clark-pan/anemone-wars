@@ -1,0 +1,114 @@
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/dev.js:10:9: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/dev.js:10:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/dev.js:10:20: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/dev.js:10:22: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:12:9: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:12:22: Unexpected token <
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:12:23: Unexpected token +
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:13:23: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:13:25: Unexpected token (
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:22: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:24: Unexpected token Promise
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:31: Unexpected token <
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:35: Unexpected token |
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:21: Unexpected token ?
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:22: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:35: Unexpected token |
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:37: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:38: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:40: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:40: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:43: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:14:47: Unexpected token ,
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:15:20: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:15:22: Unexpected token any
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:15:25: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:15:27: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:16:3: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:16:5: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:16:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:16:14: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:16:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:16:20: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:15: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:24: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:24: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:26: Unexpected token R
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:27: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:29: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:43: Unexpected token |
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:19:47: Unexpected token ,
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:20:14: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:20:23: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:20:23: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:20:25: Unexpected token any
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:20:28: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:20:30: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:20:44: Unexpected token |
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:21:3: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:21:4: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:21:6: Unexpected token Promise
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:21:13: Unexpected token <
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:21:14: Unexpected token U
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:21:15: Unexpected token >
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:21:16: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:23:3: Unexpected reserved word catch
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:24:14: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:24:22: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:24:24: Unexpected token any
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:24:27: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:24:29: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:24:44: Unexpected token |
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:24:46: Unexpected token U
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:25:3: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:25:4: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:25:16: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:27:28: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:27:30: Unexpected token Promise
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:27:37: Unexpected token <
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:27:41: Unexpected token |
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:27:45: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:27:57: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:28:26: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:28:28: Unexpected token any
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:28:31: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:28:32: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:28:44: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:30:13: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:30:26: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:31:26: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:31:45: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:31:46: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:31:58: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:35:15: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:35:24: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:35:24: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:35:26: Unexpected token R
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:35:27: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:35:29: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:35:37: Unexpected token ,
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:36:14: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:36:23: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:36:23: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:36:25: Unexpected token any
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:36:28: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:36:30: Unexpected token =>
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:37:3: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:37:4: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:37:10: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:39:25: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:39:27: Unexpected token T
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:39:28: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:39:29: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:39:41: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:40:1: Unexpected token }
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File
+/Users/clarkpan/.jspm/packages/npm/fbjs@0.8.1/flow/lib/Promise.js:41:1: Unexpected token End of File

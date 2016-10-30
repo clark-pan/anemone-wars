@@ -1,0 +1,40 @@
+{
+  "name": "material-ui",
+  "author": "Call-em-all Engineering Team",
+  "version": "0.15.0-beta.2",
+  "description": "Material Design UI components built with React",
+  "main": "./index.js",
+  "keywords": [
+    "react",
+    "react-component",
+    "material design",
+    "material-ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callemall/material-ui.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callemall/material-ui/issues"
+  },
+  "homepage": "http://material-ui.com/",
+  "peerDependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-tap-event-plugin": "^1.0.0"
+  },
+  "dependencies": {
+    "inline-style-prefixer": "^1.0.2",
+    "keycode": "^2.1.0",
+    "lodash.merge": "^4.1.0",
+    "lodash.throttle": "^4.0.0",
+    "react-addons-create-fragment": "^15.0.0",
+    "react-addons-transition-group": "^15.0.0",
+    "react-addons-update": "^15.0.0",
+    "react-event-listener": "^0.1.1",
+    "recompose": "^0.17.0",
+    "simple-assign": "^0.1.0",
+    "warning": "^2.1.0"
+  }
+}

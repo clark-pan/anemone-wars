@@ -1,0 +1,1 @@
+module.exports = require("npm:inline-style-prefix-all@1.0.5/lib/prefixAll.js");

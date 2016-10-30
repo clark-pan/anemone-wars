@@ -1,0 +1,775 @@
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:5:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:5:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:6:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:6:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:8:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:8:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:8:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:8:25: Unexpected token (
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:8:26: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:7: Unexpected token (
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:8: Unexpected token var
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:12: Unexpected token _len
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:72: Unexpected token ;
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:74: Unexpected token _key
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:79: Unexpected token <
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:81: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:93: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:93: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/applyRouterMiddleware.js:9:95: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/AsyncUtils.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/AsyncUtils.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/AsyncUtils.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/AsyncUtils.js:5:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:3:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:3:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:4:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:4:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:5:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/browserHistory.js:5:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/computeChangedRoutes.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/computeChangedRoutes.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/computeChangedRoutes.js:3:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/computeChangedRoutes.js:74:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/computeChangedRoutes.js:74:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/computeChangedRoutes.js:74:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/computeChangedRoutes.js:74:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:3:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:4:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:4:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:5:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:5:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:6:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createMemoryHistory.js:6:37: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:3:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:3:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:7:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:7:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:7:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:7:25: Unexpected token (
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createRouterHistory.js:7:26: Unexpected token createHistory
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:5:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:7:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:7:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:8:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:9:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:9:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:10:62: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:11:10: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:11:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:11:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:11:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:12:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:12:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:12:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:13:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:13:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:13:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/createTransitionManager.js:13:25: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:3:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:7:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:67:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:67:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:67:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/deprecateObjectProperties.js:67:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:5:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:6:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:7:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:7:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:70:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:70:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:70:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getComponents.js:70:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getRouteParams.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getRouteParams.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getRouteParams.js:3:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getRouteParams.js:25:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getRouteParams.js:25:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getRouteParams.js:25:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/getRouteParams.js:25:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:3:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:3:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:4:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:4:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:5:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/hashHistory.js:5:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:3:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:4:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:22:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:22:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:22:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/History.js:22:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:5:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:5:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:6:13: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:6:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:20:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:20:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:20:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexLink.js:20:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:3:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:3:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:4:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:4:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:6:17: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:6:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:7:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:47:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:47:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:47:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRedirect.js:47:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:3:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:3:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:4:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:4:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:6:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:6:41: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:6:77: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:7:46: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:46:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:46:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:46:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/IndexRoute.js:46:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:4:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:27:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:27:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:29:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:29:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:31:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:31:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:33:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:33:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:35:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/InternalPropTypes.js:35:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/isActive.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/isActive.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/isActive.js:3:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/isActive.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/isActive.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/isActive.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/isActive.js:4:30: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:3:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:4:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:4:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:56:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:56:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:56:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Lifecycle.js:56:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:7:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:7:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:8:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:8:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:9:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:161:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:161:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:161:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Link.js:161:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:7:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:7:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:9:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:9:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:10:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:10:37: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:11:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:12:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:12:58: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:67:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:67:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:67:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/match.js:67:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:5:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:6:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:6:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:8:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/matchRoutes.js:9:30: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:7:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:8:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PatternUtils.js:8:23: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:3:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:5:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:5:39: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:6:13: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:6:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:6:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:7:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:7:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:23:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:23:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:32:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:32:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:36:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:36:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:38:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:38:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:40:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:40:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:42:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:42:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:44:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:44:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:46:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:46:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:48:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:48:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:51:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:51:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:96:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:96:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:96:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/PropTypes.js:96:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:3:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:3:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:4:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:4:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:5:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:5:41: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:5:77: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:6:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:7:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:90:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:90:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:90:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Redirect.js:90:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:3:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:3:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:4:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:4:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:5:45: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:6:39: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:44:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:44:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:44:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Route.js:44:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:7:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:7:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:8:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:8:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:9:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:9:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:11:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:11:37: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:12:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:12:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:13:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:13:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:13:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:13:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:14:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:14:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:14:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:15:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:15:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:15:58: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:16:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:16:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:16:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:16:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:186:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:186:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:186:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/Router.js:186:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:3:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:4:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:4:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:36:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:36:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:36:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteContext.js:36:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:6:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:6:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:8:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:8:39: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:9:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:9:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:10:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:11:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:11:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:135:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:135:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:135:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterContext.js:135:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:7:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouterUtils.js:7:39: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:3:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:6:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/routerWarning.js:6:21: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:7:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:8:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:9:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:9:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:10:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RouteUtils.js:10:21: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:3:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:3:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:4:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:4:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:19:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:19:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:19:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/RoutingContext.js:19:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:6:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:7:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/TransitionUtils.js:7:21: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:3:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:4:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:4:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:5:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRouterHistory.js:5:25: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:7:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:7:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:9:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:9:37: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:10:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:10:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:39:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:39:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:39:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/useRoutes.js:39:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:4:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:4:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:6:14: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:6:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:7:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:7:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:7:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:8:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:8:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:9:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:9:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:9:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:12:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:12:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:12:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:13:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:13:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:13:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:13:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:14:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:14:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:14:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:14:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:15:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:15:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:15:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:15:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:16:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:16:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:16:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:16:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:17:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:17:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:17:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:17:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:18:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:18:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:18:15: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:18:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:19:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:19:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:19:17: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:19:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:22:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:22:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:22:17: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:22:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:23:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:23:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:23:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:23:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:24:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:24:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:24:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:24:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:25:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:25:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:25:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:25:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:26:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:26:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:26:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:26:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:27:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:27:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:27:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:27:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:30:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:30:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:30:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:30:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:31:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:31:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:31:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:31:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:33:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:33:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:33:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:34:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:34:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:34:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:34:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:35:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:35:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:35:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:35:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:36:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:36:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:36:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:36:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:37:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:37:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:37:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:37:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:38:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:38:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:38:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:38:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:39:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:39:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:39:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:39:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:41:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:41:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:41:44: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:42:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:42:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:42:15: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:42:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:43:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:43:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:43:17: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:43:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:44:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:44:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:44:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:44:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:45:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:45:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:45:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:45:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:47:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:47:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:47:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:48:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:48:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:48:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:48:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:49:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:49:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:49:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:49:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:52:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:52:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:52:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:52:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:53:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:53:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:53:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:53:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:54:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:54:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:54:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:54:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:55:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:55:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:55:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:55:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:56:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:56:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:56:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:56:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:57:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:57:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:57:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/react-router@2.3.0/es6/index.js:57:34: Semi-colon expected

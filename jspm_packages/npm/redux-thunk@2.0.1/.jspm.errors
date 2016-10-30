@@ -1,0 +1,9 @@
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/es/index.js:1:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/es/index.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/es/index.js:1:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/es/index.js:1:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/src/index.js:1:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/src/index.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/src/index.js:1:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/redux-thunk@2.0.1/src/index.js:1:16: Semi-colon expected

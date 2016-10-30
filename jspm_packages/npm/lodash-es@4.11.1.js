@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash-es@4.11.1/lodash.js");

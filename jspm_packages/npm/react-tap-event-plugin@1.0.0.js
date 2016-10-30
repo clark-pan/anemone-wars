@@ -1,0 +1,1 @@
+module.exports = require("npm:react-tap-event-plugin@1.0.0/src/injectTapEventPlugin.js");

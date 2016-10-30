@@ -1,0 +1,1 @@
+module.exports = require("npm:react-codemirror@0.2.6/lib/Codemirror.js");

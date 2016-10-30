@@ -1,0 +1,813 @@
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:8:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:14:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:14:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:25:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:25:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:26:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:26:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:26:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:26:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:28:10: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:28:10: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:28:12: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:29:6: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:29:6: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/Actions.js:29:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:6:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:8:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:9:87: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:10:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:11:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:11:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:161:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:161:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:161:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createBrowserHistory.js:161:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/AsyncUtils.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/AsyncUtils.js:4:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:6:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:7:41: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:8:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:8:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:28:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:28:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:28:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createDOMHistory.js:28:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:6:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:6:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:8:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:9:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:10:119: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:11:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:12:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:12:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:12:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:228:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:228:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:228:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHashHistory.js:228:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:6:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:6:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:8:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:9:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:10:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:10:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:10:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:11:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:11:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:12:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:12:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:12:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:266:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:266:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:266:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createHistory.js:266:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:6:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:42:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:42:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:42:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createLocation.js:42:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:6:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:6:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:8:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:9:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:9:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:139:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:139:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:139:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/createMemoryHistory.js:139:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:3:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:12:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:12:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/deprecate.js:12:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:6:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMStateStorage.js:6:21: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:7:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:8:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:9:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:10:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:11:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/DOMUtils.js:11:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:3:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:3:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:4:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:4:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:6:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableBeforeUnload.js:6:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:3:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:3:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:4:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:4:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:6:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/enableQueries.js:6:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/ExecutionEnvironment.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/ExecutionEnvironment.js:4:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/PathUtils.js:5:21: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:3:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:3:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:17:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:17:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:17:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/runTransitionHook.js:17:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:6:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:8:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:8:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:9:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:9:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:128:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:128:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:128:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBasename.js:128:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:6:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:7:55: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:8:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:8:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:99:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:99:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:99:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useBeforeUnload.js:99:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:5:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:5:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:6:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:7:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:7:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:8:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:9:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:9:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:161:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:161:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:161:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/useQueries.js:161:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:9:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:19:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:19:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:21:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:21:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:21:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/Actions.js:21:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/AsyncUtils.js:1:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/AsyncUtils.js:1:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:1:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:1:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:2:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:3:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:4:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:5:87: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:6:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:7:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:7:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:42:39: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:42:42: Unexpected token historyState
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:42:61: Unexpected token ,
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:42:63: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:42:67: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:42:67: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:47:37: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:47:40: Unexpected token location
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:47:57: Unexpected token ,
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:47:59: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:47:73: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:47:73: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createBrowserHistory.js:48:3: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:1:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:1:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:2:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:3:41: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:4:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:4:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:9:5: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:9:8: Unexpected token options
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:10:5: const variables must have an initializer
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:11:4: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:22:3: Illegal return statement
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:23:5: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:23:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createDOMHistory.js:25:3: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:2:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:2:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:3:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:4:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:5:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:6:119: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:7:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:8:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:8:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:72:37: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:72:40: Unexpected token location
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:72:57: Unexpected token ,
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:72:59: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:72:73: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:72:73: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:126:5: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:126:8: Unexpected token options
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:127:5: const variables must have an initializer
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHashHistory.js:130:3: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:2:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:2:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:3:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:4:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:5:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:6:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:6:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:6:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:7:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:7:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:8:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:8:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:8:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:197:20: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:197:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:197:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:197:38: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:197:40: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:217:24: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:217:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:217:43: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:217:46: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createHistory.js:219:3: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:2:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:3:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:16:18: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:16:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:16:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:16:36: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:16:38: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:27:3: Illegal return statement
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createLocation.js:35:1: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:2:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:2:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:3:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:4:36: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:5:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:5:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:24:5: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:24:8: Unexpected token options
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:25:5: const variables must have an initializer
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:29:4: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:46:16: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:46:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:48:5: Unexpected token invariant
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/createMemoryHistory.js:53:3: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:10:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:10:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/deprecate.js:10:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:2:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:2:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:16:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:16:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:49:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMStateStorage.js:49:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:1:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:9:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:17:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:17:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:23:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:23:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:29:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:29:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:33:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:33:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:38:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:38:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:49:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:49:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:63:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/DOMUtils.js:63:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:1:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:1:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:2:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:2:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:4:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableBeforeUnload.js:4:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:1:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:1:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:2:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:2:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:4:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:4:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/enableQueries.js:4:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/ExecutionEnvironment.js:1:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/ExecutionEnvironment.js:1:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:12:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/PathUtils.js:12:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:18:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:18:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:18:8: Unexpected reserved word default
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/runTransitionHook.js:18:16: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:2:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:3:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:4:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:4:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:60:9: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:60:12: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:106:21: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:106:24: Unexpected token path
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:106:30: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:114:24: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:114:27: Unexpected token path
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:114:33: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBasename.js:115:5: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:2:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:3:55: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:4:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:4:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:89:7: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:89:10: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:92:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:92:31: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:92:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:96:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:96:33: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:96:35: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useBeforeUnload.js:102:1: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:1:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:1:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:1:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:2:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:2:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:3:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:3:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:4:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:5:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:84:9: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:84:12: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:86:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:86:26: Unexpected token :
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:86:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:144:21: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:144:24: Unexpected token path
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:144:37: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:152:24: Unexpected token ...
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:152:27: Unexpected token path
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:152:40: Unexpected token )
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/useQueries.js:153:5: Unexpected token }
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:3:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:3:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:3:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:4:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:4:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:4:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:4:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:5:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:5:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:5:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:6:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:6:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:7:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:7:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:7:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:8:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:8:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:8:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:8:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:9:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:9:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:9:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:10:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:10:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:10:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:10:34: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:11:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:11:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:11:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:11:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:12:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:12:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:12:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:13:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:13:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:13:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:13:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:14:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:14:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:14:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:14:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:15:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:15:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:15:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:15:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:16:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:16:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:16:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:16:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:17:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:17:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:17:17: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:17:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:18:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:18:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:18:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:18:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:21:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:21:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:21:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:21:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:22:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:22:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:22:30: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:22:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:23:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:23:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:23:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:23:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:24:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:24:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:24:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:24:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:26:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/es6/index.js:26:8: Semi-colon expected
+
+MultipleErrors: /Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:1:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:1:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:1:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:1:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:2:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:2:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:2:26: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:2:31: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:3:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:3:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:3:28: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:3:33: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:5:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:5:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:5:20: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:5:25: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:6:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:6:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:6:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:6:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:7:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:7:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:7:19: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:7:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:9:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:9:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:9:16: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:9:21: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:12:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:12:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:12:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:12:32: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:13:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:13:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:13:22: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:13:27: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:15:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:15:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:15:18: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:15:23: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:16:1: Unexpected reserved word import
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:16:8: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:16:24: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:16:29: Semi-colon expected
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:17:1: Unexpected reserved word export
+/Users/clarkpan/.jspm/packages/npm/history@2.1.0/modules/index.js:17:8: Semi-colon expected

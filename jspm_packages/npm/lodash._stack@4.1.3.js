@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash._stack@4.1.3/index");

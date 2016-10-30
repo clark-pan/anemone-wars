@@ -1,0 +1,36 @@
+{
+  "name": "unreachable-branch-transform",
+  "version": "0.5.1",
+  "description": "Browserify transform to remove unreachable code",
+  "keywords": [
+    "browserify",
+    "browserify-transform",
+    "transform",
+    "minify",
+    "unreachable"
+  ],
+  "homepage": "https://github.com/zertosh/unreachable-branch-transform",
+  "license": "MIT",
+  "author": "Andres Suarez <zertosh@gmail.com>",
+  "files": [
+    "README.md",
+    "index.js",
+    "unreachableBranchTransformer.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zertosh/unreachable-branch-transform.git"
+  },
+  "dependencies": {
+    "esmangle-evaluator": "^1.0.0",
+    "recast": "^0.11.4"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "tap": "^5.7.1"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  }
+}
